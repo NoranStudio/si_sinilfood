@@ -1,7 +1,12 @@
 import React from 'react';
 import './App.css';
-import logo from './assets/sinil_logo.png';  // 로고 이미지
-import shinliFoodImage from './assets/SHINLI FOOD.png';  // SHINLI FOOD 이미지
+import logo from './assets/sinil_logo.png'; 
+import logo_big from './assets/logo_big2.png'; // 로고 이미지
+import shinliFoodImage from './assets/SHINLI FOOD white.png'; // SHINLI FOOD 이미지
+import phoneIcon from './assets/phone.png'; // 전화 아이콘 이미지 추가
+import headsetIcon from './assets/headset.png'; // 헤드셋 아이콘 이미지 추가
+import fc_oil from './assets/fc_oil.png'; // 전화 아이콘 이미지 추가
+import store_oil from './assets/store_oil.png'; // 헤드셋 아이콘 이미지 추가
 
 function App() {
   return (
@@ -36,17 +41,47 @@ function App() {
 
         {/* 우측 사이드 버튼 */}
         <div className="side-buttons">
-          <a href="#contact" className="contact-button phone">📞</a>
-          <a href="#contact" className="contact-button headset">🎧</a>
+          <a href="#contact" className="contact-button">
+            <img src={phoneIcon} alt="Phone Icon" className="icon-image" />
+          </a>
+          <a href="#contact" className="contact-button">
+            <img src={headsetIcon} alt="Headset Icon" className="icon-image" />
+          </a>
         </div>
       </div>
 
       {/* 페이지 내용 (예: 고객문의 페이지) */}
-      <div id="contact" className="contact-page">
-        <h2>고객문의 페이지</h2>
-        <p>여기서 고객문의를 하실 수 있습니다.</p>
+      <div className="page-content">
+        <div>
+          <h2 className="page-title">
+            <span className="black-highlight">안전하고 품질 높은 제품</span><span className="normal-text">으로</span>
+            <br />
+            <span className="yellow-highlight">외식산업에 최적화된 유통 서비스</span><span className="normal-text">를 선보입니다.</span>
+          </h2>
+          <p className="page-description">
+            신일푸드는 고객의 안전과 건강을 지키기 위해,<br />
+            엄선된 품질과 철저한 관리를 바탕으로 최상의 제품만을 제공합니다.
+          </p>
+        </div>
+        <img src={logo_big} alt="Logo" className="page-logo" />
       </div>
-    </div>
+
+      {/* 페이지 하단 콘텐츠 */}
+      <div className="oil-section">
+              <div className="oil-item">
+                <img src={fc_oil} alt="FC 전용유 제작" className="oil-image" />
+                <div className="overlay">
+                  <p className="overlay-text">FC 전용유 제작</p>
+                </div>
+              </div>
+              <div className="oil-item">
+                <img src={store_oil} alt="업소용 식용유" className="oil-image" />
+                <div className="overlay">
+                  <p className="overlay-text">업소용 식용유</p>
+                </div>
+              </div>
+            </div>
+          </div>
   );
 }
 
