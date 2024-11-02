@@ -7,6 +7,7 @@ import phoneIcon from './assets/phone.png'; // 전화 아이콘 이미지 추가
 import headsetIcon from './assets/headset.png'; // 헤드셋 아이콘 이미지 추가
 import fc_oil from './assets/fc_oil.png'; // 전화 아이콘 이미지 추가
 import store_oil from './assets/store_oil.png'; // 헤드셋 아이콘 이미지 추가
+import truckImage from './assets/truck.png'; // 헤드셋 아이콘 이미지 추가
 
 function App() {
   return (
@@ -81,7 +82,22 @@ function App() {
                 </div>
               </div>
             </div>
+      {/* 전국직영센터 콘텐츠 */}
+      <div className="center-section">
+        <div className="center-text">
+          <h2 className="center-title">전국직영센터 운영으로</h2>
+          <h3 className="center-subtitle">전국 어디서나 신속하고 일관된 품질</h3>
+          <div className="button-group">
+            <button className="center-button active">전국 일일배송</button>
+            <button className="center-button">물류 네트워크</button>
+            <button className="center-button">뛰어난 상품성</button>
+            <button className="center-button">편리한 보관 시스템</button>
           </div>
+        </div>
+        <img src={truckImage} alt="트럭 이미지" className="truck-image" />
+      </div>
+    </div>
+
   );
 }
 
