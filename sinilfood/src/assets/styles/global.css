@@ -1,0 +1,429 @@
+/* App 전체 레이아웃 */
+.App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    
+  }
+  
+  /* 배너 스타일 (기본 크기) */
+  .banner {
+    background-image: url('../img/banner.png'); /* 배너 이미지 경로 */
+    background-size: cover;
+    width: 100%; /* 반응형 크기 */
+    max-width: 1920px;
+    height: 950px; /* 기본 높이 */
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    text-align: left;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+  
+    overflow: hidden; /* 라운드된 부분에서 이미지가 넘치지 않도록 처리 */
+    margin: 0 auto; /* 배너 중앙 정렬 */
+    z-index: 1;
+    
+  }
+  
+  /* 로고 위치 설정 */
+  .logo img {
+    position: absolute;
+    top: 44px;   /* 위쪽으로부터 44px */
+    left: 320px; /* 왼쪽으로부터 320px */
+    width: 176px; /* 너비 176px */
+    height: 62px; /* 높이 62px */
+  }
+  
+  /* 네비게이션 스타일 */
+  .navbar {
+    position: absolute;
+    top: 64px;      /* 위쪽에서 64px */
+    left: 1091px;   /* 왼쪽에서 1091px */
+    display: flex;
+    z-index: 3;     /* 네비게이션이 배너 위에 보이도록 설정 */
+  }
+  
+  .navbar ul {
+    list-style: none;   /* 리스트 스타일 제거 (기본 불릿 삭제) */
+    display: flex;      /* 리스트 항목을 가로로 배치 */
+    padding: 0;        /* 기본 padding 제거 */
+    margin: 0;         /* 기본 margin 제거 */
+    gap: 63px;         /* 각 항목 사이에 63px 간격 설정 */
+  }
+  
+  .navbar li {
+    display: inline-block; /* 리스트 항목을 가로로 배치 */
+  }
+  
+  .navbar a {
+    font-family: 'Apple SD Gothic Neo', sans-serif; /* 폰트 설정 */
+    font-size: 18px;       /* 폰트 크기 */
+    font-weight: 50;      /* 폰트 가중치 */
+    line-height: 21.6px;   /* 줄 간격 */
+    text-align: center;    /* 텍스트 중앙 정렬 */
+    color: white;          /* 텍스트 색상 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    display: block;        /* 앵커 태그를 블록 요소로 설정 */
+  }
+  
+  .navbar a:hover {
+  
+  }
+  
+  /* SHINLI FOOD 이미지 */
+  .shinli-food-img {
+    position: absolute;
+    width: 210px;
+    height: 28px;
+    top: 371px;
+    left: 320px;
+    
+  }
+  
+  /* 배너 텍스트 스타일 */
+  .title-large {
+    position: absolute;
+    height: 30px;
+    top: 420px;
+    left: 320px;
+    font-family: Apple SD Gothic Neo;
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 30px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+  }
+  
+  .title-large + .title-large {
+    top: 485px;
+  }
+  
+  .title-large .highlight {
+    font-weight: 800;
+    color: white;
+  }
+  
+  /* 설명 텍스트 스타일 */
+  .description {
+    position: absolute;
+    width: 480px;
+    height: 70px;
+    top: 570px;
+    left: 320px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Apple SD Gothic Neo;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    font-family: Apple SD Gothic Neo;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    font-family: Apple SD Gothic Neo;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    text-align: left;
+  }
+  
+  .description strong {
+    font-weight: 700;
+  }
+  /* 우측 사이드 버튼 */
+  .side-buttons {
+    position: absolute;
+    right: 24px;
+    top: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .contact-button {
+    background-color: #ffaa00;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .contact-button:hover {
+    background-color: #ff8800;
+  }
+  
+  /* 페이지 내용 (고객문의 페이지) */
+  .contact-page {
+    padding: 50px;
+    background-color: #f7f7f7;
+    height: 100vh;
+  }
+  
+  .contact-page h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-page p {
+    font-size: 1.2rem;
+  }
+  
+  
+  ///////////////////////////
+  /* 고객문의 페이지의 배너 스타일 */
+  .contact-banner {
+    width: 100%; /* 반응형 크기 */
+    max-width: 1920px;
+    
+  }
+  
+  /* 고객문의 페이지 내용 정렬 */
+  .page-content {
+    max-width: 1920px; /* 제한된 너비 설정 */
+    margin: auto; /* 페이지 중앙 정렬 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    color: #333; /* 텍스트 색상 */
+    background-color: #ffffff; /* 배경색 흰색 */
+    display: flex; /* 플렉스 레이아웃 적용 */
+    align-items: center; /* 세로 방향으로 중앙 정렬 */
+    gap: 371.55px; /* 텍스트와 아이콘 사이의 간격 */
+  }
+  
+  /* 페이지 제목 스타일 */
+  /* 페이지 제목 스타일 */
+  .page-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 42px;
+    line-height: 65px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    margin: 0; /* 여백 제거 */
+    padding-top: 180px; /* 위쪽 여백 */
+    padding-left: 275px;
+  }
+  
+  /* 강조되지 않은 텍스트 스타일 */
+  .page-title .normal-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 65px;
+    letter-spacing: -0.05em;
+    text-align: left;
+  }
+  
+  /* Black Highlight 스타일 */
+  .page-title .black-highlight {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -0.05em;
+    text-align: left;
+  }
+  
+  /* Yellow Highlight 스타일 */
+  .page-title .yellow-highlight {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #f3b52e; /* 강조된 텍스트 색상 */
+  }
+  
+  /* 설명 텍스트 스타일 */
+  .page-description {
+    font-family: 'Apple SD Gothic Neo'; /* 폰트 설정 */
+    font-size: 20px; /* 설명 텍스트 폰트 크기 */
+    font-weight: 400px; /* 가벼운 폰트 */
+    line-height: 40px; /* 줄 간격 */
+    color: #262626; /* 설명 텍스트 색상 */
+    margin: 0; /* 여백 제거 */
+    padding-left: 275px;
+    padding-top : 45px;
+    letter-spacing: -0.05em;
+  }
+  
+  /* 로고 이미지 스타일 */
+  .page-logo {
+    width: 129.45px; /* 로고 너비 */
+    height: 151.42px; /* 높이는 비율에 맞게 자동 조정 */
+    opacity: 0.8; /* 투명도 설정 */
+    padding-top: 20px;
+  }
+  
+  /* 페이지 하단 콘텐츠 섹션 */
+  .oil-section {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px; /* 배너의 최대 너비에 맞춤 */
+    margin: 0 auto; /* 중앙 정렬 */
+    background-color: #ffffff;
+  
+  }
+  
+  /* 이미지 아이템 스타일 */
+  .oil-item {
+    
+    position: relative;
+    width: 50%; /* 두 이미지를 나란히 배치하기 위해 너비 설정 */
+  }
+  
+  .oil-image {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* 오버레이 스타일 */
+  .overlay {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .overlay-text {
+    font-family: 'Apple SD Gothic Neo';
+    color: #ffffff;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -0.05em;
+    text-align: left;
+  
+  }
+  
+  
+  
+  /* 전국직영센터 섹션 스타일 */
+  .center-section {
+    padding-top: 177PX;
+    display: flex;
+    flex-direction: column; /* 요소들을 세로로 정렬 */
+    align-items: flex-start;
+    max-width: 1920px; /* 제한된 너비 설정 */
+    margin: 0px auto; /* 중앙 정렬 및 위쪽 여백 */
+    background-color: #ffffff;
+    border-radius: 15px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    //border-left: 2px solid rgba(0, 0, 0, 0.1); /* 왼쪽 구분 선 */
+    //border-right: 2px solid rgba(0, 0, 0, 0.1); /* 오른쪽 구분 선 */
+  }
+  
+  .center-text {
+    margin-bottom: 40px; /* 트럭 이미지와의 간격 */
+  }
+  
+  
+  .center-title {
+    padding-left: 276px;
+    font-family: Apple SD Gothic Neo;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+  }
+  
+  .center-title .normal-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+  }
+  
+  /* Black Highlight 스타일 */
+  .center-title .black-highlight {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+  }
+  
+  
+  .center-subtitle {
+    padding-bottom: 20px;
+    padding-left: 276px;
+    font-family: Apple SD Gothic Neo;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+  }
+  
+  .button-group {
+    padding-left: 276px;
+    display: flex;
+    gap: 20px; /* 버튼 사이 간격 */
+  }
+  
+  .center-button {
+    padding: 10px 22.5px;
+    border-radius: 100px; /* 둥근 버튼 */
+    background-color: #E6E6E6; /* 비활성화 배경색 */
+    color: #333; /* 비활성화 글씨 색상 */
+    font-family: Apple SD Gothic Neo;
+    font-weight: 200;
+    letter-spacing: -0.05em;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 색상 전환 효과 */
+  }
+  
+  .center-button.active {
+    background-color: #333; /* 활성화 배경색 */
+    color: #fff; /* 활성화 글씨 색상 */
+    font-family: Apple SD Gothic Neo;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    font-size: 28px;
+  }
+  
+  .center-button:hover {
+    background-color: #333; /* 호버 시 검은 배경색 */
+    color: #fff; /* 호버 시 흰색 글씨 */
+  }
+  
+  .truck-image {
+    padding-left: 276px;
+    flex: 1;
+    width: 1368.86px;
+    height: 510px;
+    top: 2388px;
+    left: 276px;
+    gap: 0px;
+    border-radius: 30px 0px 0px 0px;
+    opacity: 0px;
+    
+  }
+  
