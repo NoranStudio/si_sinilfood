@@ -421,9 +421,48 @@
     height: 510px;
     top: 2388px;
     left: 276px;
+    padding-bottom: 108px;
     gap: 0px;
     border-radius: 30px 0px 0px 0px;
     opacity: 0px;
     
   }
   
+
+  /* 협력사 및 제조사 상단 멘트 */
+.partners-header {
+  text-align: center; /* 중앙 정렬 */
+  margin-bottom: 50px; /* 하단 여백 */
+}
+
+.sinil-food-text {
+  color: var(---3, #EAB54D);
+  font-family: 'Caprasimo', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px; /* 134.615% */
+  margin: 0; /* 기본 여백 제거 */
+}
+
+.main-heading {
+  color: #000;
+  font-family: 'Apple SD Gothic Neo', sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 130% */
+  letter-spacing: -2.5px;
+  margin: 10px 0; /* 상단과 하단 여백 */
+}
+
+.main-subheading {
+  color: #000;
+  font-family: 'Apple SD Gothic Neo', sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 130% */
+  letter-spacing: -2.5px;
+  margin: 10px 0; /* 상단과 하단 여백 */
+}

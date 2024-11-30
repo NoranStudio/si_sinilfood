@@ -3,6 +3,7 @@ import '../../assets/styles/global.css';
 import logo from '../../assets/img/sinil_logo.png'; 
 import logo_big from '../../assets/img/logo_big2.png'; // 로고 이미지
 import shinliFoodImage from '../../assets/img/SHINLI FOOD white.png'; // SHINLI FOOD 이미지
+import shinliFoodyellowImage from '../../assets/img/SHINLI FOOD.png'; // SHINLI FOOD 이미지
 import phoneIcon from '../../assets/img/phone.png'; // 전화 아이콘 이미지 추가
 import headsetIcon from '../../assets/img/headset.png'; // 헤드셋 아이콘 이미지 추가
 import fc_oil from '../../assets/img/fc_oil.png'; // 전화 아이콘 이미지 추가
@@ -96,6 +97,30 @@ function App() {
         </div>
         <img src={truckImage} alt="트럭 이미지" className="truck-image" />
       </div>
+      {/* 협력사 및 제조사 상단 멘트 */}
+      <div className="partners-header">
+        <img src={shinliFoodyellowImage} alt="SHINLI FOOD" className="shinli-food-yellow-img" />
+        <h2 className="main-heading">주식회사 신일푸드는</h2>
+        <h2 className="main-subheading">상생경영을 통해 더 큰 가치를 만들어갑니다.</h2>
+      </div>
+      {/* 협력사 및 제조사 섹션 */}
+      <div className="partners-section">
+        <h3 className="partners-title">협력사 및 제조사</h3>
+        <div className="partners-grid">
+          {/* Add your logos here */}
+          <div className="partner-item"></div>
+          <div className="partner-item"></div>
+          <div className="partner-item"></div>
+          <div className="partner-item"></div>
+          <div className="partner-item"></div>
+          <div className="partner-item"></div>
+          <div className="partner-item"></div>
+          <div className="partner-item"></div>
+          <div className="partner-item"></div>
+        </div>
+      </div>
+
+
     </div>
 
   );
