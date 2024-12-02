@@ -119,8 +119,6 @@ function App() {
           <div className="partner-item"></div>
         </div>
       </div>
-
-
     </div>
 
   );

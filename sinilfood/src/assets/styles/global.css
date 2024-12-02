@@ -430,11 +430,18 @@
   
 
   /* 협력사 및 제조사 상단 멘트 */
+/* 협력사 및 제조사 상단 멘트의 배경 이미지 */
 .partners-header {
-  text-align: center; /* 중앙 정렬 */
-  margin-bottom: 50px; /* 하단 여백 */
+  position: relative;
+  background-image: url('../../assets/img/partners-header-bg.png');
+  background-size: cover; /* 배경을 영역에 맞게 조정 */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%; /* 부모 요소 너비에 맞춤 */
+  max-width: 1923px; /* 최대 너비 제한 */
+  aspect-ratio: 1923 / 1172; /* 가로세로 비율 설정 */
+  margin: 0 auto;
 }
-
 .sinil-food-text {
   color: var(---3, #EAB54D);
   font-family: 'Caprasimo', sans-serif;
@@ -447,22 +454,28 @@
 
 .main-heading {
   color: #000;
-  font-family: 'Apple SD Gothic Neo', sans-serif;
-  font-size: 50px;
+  font-family: "Apple SD Gothic Neo";
+  font-size: 45px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 65px; /* 130% */
-  letter-spacing: -2.5px;
+  letter-spacing: -3.5px;
   margin: 10px 0; /* 상단과 하단 여백 */
 }
 
 .main-subheading {
   color: #000;
   font-family: 'Apple SD Gothic Neo', sans-serif;
-  font-size: 50px;
+  font-size: 45px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 65px; /* 130% */
-  letter-spacing: -2.5px;
+  letter-spacing: -3.5px;
   margin: 10px 0; /* 상단과 하단 여백 */
 }
+
+  /* SHINLI FOOD 노란 이미지 */
+  .shinli-food-yellow-img {
+    padding-top: 372px;
+    padding-bottom: 20px;
+  }
