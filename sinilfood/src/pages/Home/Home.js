@@ -22,14 +22,8 @@ import youngmiLogo from '../../assets/img/cooperate/영미산업(주).png';
 import hiveLogo from '../../assets/img/cooperate/hive.png';
 import bnbKoreaLogo from '../../assets/img/cooperate/bnb.png';
 
-//프랜차이즈 로고 블러 이미지
-import franchise1Logo from '../../assets/img/franchise/franchise1.png';
-import franchise2Logo from '../../assets/img/franchise/franchise2.png';
-import franchise3Logo from '../../assets/img/franchise/franchise3.png';
-import franchise4Logo from '../../assets/img/franchise/franchise4.png';
-import franchise5Logo from '../../assets/img/franchise/franchise5.png';
-
-
+// 프랜차이즈 슬라이더 컴포넌트 가져오기
+import FranchiseSlider from './FranchiseSlider.js';
 
 function App() {
   return (
@@ -138,17 +132,8 @@ function App() {
           <div className="partner-item"><img src={bnbKoreaLogo} alt="BNB Korea" /></div>
         </div>
       </div>
-      {/* 프랜차이즈 물류업체 섹션 */}
-      <div className="franchise-section">
-        <h3 className="partners-title">프랜차이즈 물류업체</h3>
-        <div className="franchise-grid">
-          <div className="partner-item"><img src={franchise1Logo} alt="프랜차이즈 1" /></div>
-          <div className="partner-item"><img src={franchise2Logo} alt="프랜차이즈 2" /></div>
-          <div className="partner-item"><img src={franchise3Logo} alt="프랜차이즈 3" /></div>
-          <div className="partner-item"><img src={franchise4Logo} alt="프랜차이즈 4" /></div>
-          <div className="partner-item"><img src={franchise5Logo} alt="프랜차이즈 5" /></div>
-        </div>
-      </div>
+      {/* 프랜차이즈 물류업체 슬라이더 */}
+      <FranchiseSlider />
   </div>
 
   );

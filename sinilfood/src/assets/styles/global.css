@@ -531,10 +531,27 @@
 }
 
 .franchise-grid {
-  display: grid; /* 그리드 레이아웃 */
-  grid-template-columns: repeat(4, 1fr); /* 4열로 설정 */
-  gap: 23px; /* 로고 사이 간격 */
-  margin: 50px auto; /* 상단과 중앙 정렬 */
-  max-width: 1400px; /* 최대 너비 설정 */
-  padding: 20px; /* 내부 여백 */
+  display: flex; /* 가로로 배치 */
+  gap: 20px; /* 아이템 간 간격 */
+  margin-top: 10px;
+  overflow-x: auto; /* 가로 스크롤 활성화 */
+  white-space: nowrap; /* 줄바꿈 방지 */
+  padding: 10px 0; /* 위아래 여백 추가 */
+}
+
+.franchise-item {
+  display: inline-block; /* 요소를 한 줄에 유지 */
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 15px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 315px; /* 박스 너비 */
+  height: 135px; /* 박스 높이 */
+}
+
+.franchise-item img {
+  max-width: 100%; /* 반응형 크기 */
+  height: auto; /* 높이 자동 조정 */
 }
