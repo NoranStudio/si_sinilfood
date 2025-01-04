@@ -455,7 +455,7 @@
 .main-heading {
   color: #000;
   font-family: "Apple SD Gothic Neo";
-  font-size: 45px;
+  font-size:50px;
   font-style: normal;
   font-weight: 900;
   line-height: 65px; /* 130% */
@@ -466,7 +466,7 @@
 .main-subheading {
   color: #000;
   font-family: 'Apple SD Gothic Neo', sans-serif;
-  font-size: 45px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 900;
   line-height: 65px; /* 130% */
@@ -479,3 +479,43 @@
     padding-top: 372px;
     padding-bottom: 20px;
   }
+
+  .partners-title {
+    position: relative; /* 상대적인 위치 설정 */
+    color: #000; /* 글자 색상 */
+    font-family: "Apple SD Gothic Neo";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65px; /* 130% */
+    letter-spacing: -2.5px;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    padding-left: 278px; /* 왼쪽에서 278px 떨어짐 */
+    margin-top: 179px; /* 필요시 위쪽 여백 추가 */
+}
+
+.partners-grid {
+  display: grid; /* 그리드 레이아웃 */
+  grid-template-columns: repeat(4, 1fr); /* 4열로 설정 */
+  gap: 23px; /* 로고 사이 간격 */
+  margin: 50px auto; /* 상단과 중앙 정렬 */
+  max-width: 1400px; /* 최대 너비 설정 */
+  padding: 20px; /* 내부 여백 */
+}
+
+.partner-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* 로고 배경색 */
+  border-radius: 15px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  padding: 10px;
+  width: 325px; /* 가로 길이 */
+  height: 135px; /* 세로 높이 */
+}
+
+.partner-item img {
+  max-width: 100%; /* 반응형 크기 */
+  height: auto; /* 높이 자동 조정 */
+}
