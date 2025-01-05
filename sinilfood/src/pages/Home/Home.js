@@ -21,6 +21,8 @@ import lotteLogo from '../../assets/img/cooperate/LOTTE.png';
 import youngmiLogo from '../../assets/img/cooperate/영미산업(주).png';
 import hiveLogo from '../../assets/img/cooperate/hive.png';
 import bnbKoreaLogo from '../../assets/img/cooperate/bnb.png';
+import leftbutton from '../../assets/img/left_button.png';
+import rightbutton from '../../assets/img/right_button.png';
 
 // 프랜차이즈 슬라이더 컴포넌트 가져오기
 import FranchiseSlider from './FranchiseSlider.js';
@@ -132,9 +134,55 @@ function App() {
           <div className="partner-item"><img src={bnbKoreaLogo} alt="BNB Korea" /></div>
         </div>
       </div>
+      
       {/* 프랜차이즈 물류업체 슬라이더 */}
       <FranchiseSlider />
+
+      {/* 주식회사 신일푸드 새소식 섹션 */}
+      <div className="news-section">
+        <div className="newsmain-header">
+          <h3 className="newsmain-title">
+            <span>주식회사 신일푸드</span>
+            <span>새소식</span>
+          </h3>
+          <div className="news-navigation">
+            <button className="arrow-box left-arrow">
+              <img src={leftbutton} alt="왼쪽 화살표" className="arrow-img" />
+            </button>
+            <button className="arrow-box right-arrow">
+              <img src={rightbutton} alt="오른쪽 화살표" className="arrow-img" />
+            </button>
+          </div>
+        </div>
+        <div className="news-grid">
+          <div className="news-item">
+            <h4 className="news-notice">NOTICE</h4>
+            <h3 className="news-title">프랜차이즈산업협회, 2024 제2회 상생파...</h3>
+            <p className="news-description">
+              [2024 제2회 파트너스데이 행사 모습 (제공=KFA 상생파트너스위원회)]한...
+            </p>
+            <span className="news-date">2024. 10. 21</span>
+          </div>
+          <div className="news-item">
+            <h4 className="news-notice">NOTICE</h4>
+            <h3 className="news-title">프랜차이즈산업협회, 2024 제2회 상생파...</h3>
+            <p className="news-description">
+              [2024 제2회 파트너스데이 행사 모습 (제공=KFA 상생파트너스위원회)]한...
+            </p>
+            <span className="news-date">2024. 10. 21</span>
+          </div>
+          <div className="news-item">
+            <h4 className="news-notice">NOTICE</h4>
+            <h3 className="news-title">프랜차이즈산업협회, 2024 제2회 상생파...</h3>
+            <p className="news-description">
+              [2024 제2회 파트너스데이 행사 모습 (제공=KFA 상생파트너스위원회)]한...
+            </p>
+            <span className="news-date">2024. 10. 21</span>
+          </div>
+        </div>
+      </div>
   </div>
+  
 
   );
 }
