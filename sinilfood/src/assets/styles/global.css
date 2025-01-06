@@ -320,7 +320,6 @@
   }
   
   
-  
   /* 전국직영센터 섹션 스타일 */
   .center-section {
     padding-top: 177PX;
@@ -330,7 +329,7 @@
     max-width: 1920px; /* 제한된 너비 설정 */
     margin: 0px auto; /* 중앙 정렬 및 위쪽 여백 */
     background-color: #ffffff;
-    border-radius: 15px; /* 모서리 둥글게 */
+    border-radius: 60px; /* 모서리 둥글게 */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
     //border-left: 2px solid rgba(0, 0, 0, 0.1); /* 왼쪽 구분 선 */
     //border-right: 2px solid rgba(0, 0, 0, 0.1); /* 오른쪽 구분 선 */
@@ -438,9 +437,11 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%; /* 부모 요소 너비에 맞춤 */
-  max-width: 1923px; /* 최대 너비 제한 */
+  max-width: 1920px; /* 최대 너비 제한 */
   aspect-ratio: 1923 / 1172; /* 가로세로 비율 설정 */
   margin: 0 auto;
+  top: -200px; /* 위쪽으로 200px 이동 */
+  z-index: -1;
 }
 .sinil-food-text {
   color: var(---3, #EAB54D);
@@ -706,3 +707,4 @@
 
   padding-left: 40px;
 }
+
