@@ -24,6 +24,11 @@ import bnbKoreaLogo from '../../assets/img/cooperate/bnb.png';
 import leftbutton from '../../assets/img/left_button.png';
 import rightbutton from '../../assets/img/right_button.png';
 
+import counsel_image from '../../assets/img/counsel_image.png'; // 상담 이미지
+
+
+
+
 // 프랜차이즈 슬라이더 컴포넌트 가져오기
 import FranchiseSlider from './FranchiseSlider.js';
 
@@ -180,6 +185,36 @@ function App() {
             <span className="news-date">2024. 10. 21</span>
           </div>
         </div>
+      </div>
+
+      {/* 상담센터 섹션 */}
+      <div className="contact-center">
+        <div className="contact-content">
+          <h2 className="contact-title">
+            협력사 사업문의의 <span className="highlight">상담센터</span>
+          </h2>
+          <p className="contact-description">
+            신일푸드는 함께 성장할 파트너사들을 기다립니다. <br />
+            식용유 구매와 제조관련 상담문의를 남겨주세요.
+          </p>
+          <button className="contact-button">
+            온라인 상담문의
+            <span className="arrow">&gt;</span>
+          </button>
+          <p className="contact-info">
+            평일 AM 09:00 - PM 17:00 <br />
+            <span className="phone-number">055. 334. 7789</span>
+          </p>
+        </div>
+        <div className="contact-image">
+          <img
+            src={counsel_image}
+            alt="상담 이미지"
+            className="contact-image-file"
+          />
+        </div>
+
+        
       </div>
   </div>
   

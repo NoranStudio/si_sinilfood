@@ -708,3 +708,90 @@
   padding-left: 40px;
 }
 
+.contact-center {
+  display: flex;
+  justify-content: space-between; /* 좌우 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  background-color:rgb(255, 255, 255); /* 배경색 */
+  max-width: 1920px;
+  padding: 50px 0px;
+  margin: 0 auto;
+  border-radius: 0px; /* 모서리를 둥글게 */
+  //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.contact-content {
+  max-width: 50%;
+}
+
+.contact-title {
+  font-family: "Apple SD Gothic Neo";
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 65px;
+  letter-spacing: -0.05em;
+}
+
+.contact-title .highlight {
+  font-weight: 700;
+}
+
+.contact-description {
+  font-family: "Apple SD Gothic Neo";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: -0.05em;
+  margin: 20px 0;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #499953;
+  color: #fff;
+  font-family: "Apple SD Gothic Neo";
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button .arrow {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.contact-button:hover {
+  background-color: #3a7d44;
+}
+
+.contact-info {
+  font-family: "Apple SD Gothic Neo";
+  font-size: 18px;
+  font-weight: 300;
+  color:rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+.contact-info .phone-number {
+  color: #499953;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contact-image {
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image-file {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
