@@ -708,90 +708,171 @@
   padding-left: 40px;
 }
 
-.contact-center {
+.counsel-center {
   display: flex;
   justify-content: space-between; /* 좌우 배치 */
   align-items: center; /* 세로 중앙 정렬 */
   background-color:rgb(255, 255, 255); /* 배경색 */
   max-width: 1920px;
-  padding: 50px 0px;
+  //height : 1394PX;
+  padding: 0px 0px;
   margin: 0 auto;
   border-radius: 0px; /* 모서리를 둥글게 */
   //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
 }
 
-.contact-content {
+.counsel-content {
+  margin-top: -100px;
+  margin-left: 276px;
   max-width: 50%;
+  text-align: left; /* 텍스트 왼쪽 정렬 */
 }
 
-.contact-title {
+.counsel-title {
   font-family: "Apple SD Gothic Neo";
   font-size: 42px;
   font-weight: 300;
   line-height: 65px;
   letter-spacing: -0.05em;
+  margin: 0px;
+
+  margin-top: 189px;
 }
 
-.contact-title .highlight {
+.counsel-title .highlight {
   font-weight: 700;
 }
 
-.contact-description {
+.counsel-description {
+
+  color: #262626;
   font-family: "Apple SD Gothic Neo";
-  font-size: 20px;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 300;
-  line-height: 35px;
-  letter-spacing: -0.05em;
-  margin: 20px 0;
+  line-height: 40px; /* 166.667% */
+  letter-spacing: -1.2px;
+
+  margin-bottom: 42px;
+  margin-top: 26px;
 }
 
-.contact-button {
+.counsel-button {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
   background-color: #499953;
   color: #fff;
   font-family: "Apple SD Gothic Neo";
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
-  border-radius: 25px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
+  border-radius: 35px;
+  width: 300px;
+  height: 70px;
+  flex-shrink: 0;
 }
 
-.contact-button .arrow {
-  margin-left: 10px;
-  font-size: 18px;
+.counsel-button .arrow-svg {
+  margin-left:60px; /* 텍스트와 화살표 간격 */
+  width: 12px; /* 화살표 너비 */
+  height: 22px; /* 화살표 높이 */
+  fill: #fff; /* 화살표 색상 */
 }
 
-.contact-button:hover {
+.counsel-button:hover {
   background-color: #3a7d44;
 }
 
-.contact-info {
+.counsel-info {
+  color: #262626;
   font-family: "Apple SD Gothic Neo";
-  font-size: 18px;
+  font-size: 30px;
+  font-style: normal;
   font-weight: 300;
-  color:rgb(255, 255, 255);
-  margin-top: 20px;
+  line-height: 40px; /* 133.333% */
+  letter-spacing: -1.5px;
+
+  margin-top: 192px;
 }
 
-.contact-info .phone-number {
-  color: #499953;
-  font-size: 24px;
+.counsel-info .phone-number {
+  color: var(---1, #499953);
+  font-family: "Albert Sans";
+  font-size: 60px;
+  font-style: normal;
   font-weight: 700;
+  line-height: 65px; /* 108.333% */
+  letter-spacing: -3px;
+
+  padding-bottom: 219px;
 }
 
-.contact-image {
+.counsel-image {
   max-width: 40%;
   display: flex;
   justify-content: center;
+  width: 600px;
+  height: 600px;
+  margin-right: 277px;
+  margin-top: 79px;
 }
 
-.contact-image-file {
+.counsel-image-file {
+  
+  flex-shrink: 0;
   width: 100%;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.footer {
+  background-color: #222; /* 배경색 */
+  color: #fff; /* 텍스트 색상 */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* 요소 간 간격 */
+}
+
+.footer-logo {
+  width: 150px; /* 로고 크기 */
+  height: auto;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* 메뉴 간 간격 */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li a {
+  color: #fff; /* 링크 색상 */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline; /* 호버 시 밑줄 */
+}
+
+.footer-info p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 5px 0;
 }
