@@ -7,7 +7,9 @@ import shinliFoodyellowImage from '../../assets/img/SHINLI FOOD.png'; // SHINLI 
 import phoneIcon from '../../assets/img/phone.png'; // 전화 아이콘 이미지 추가
 import headsetIcon from '../../assets/img/headset.png'; // 헤드셋 아이콘 이미지 추가
 import fc_oil from '../../assets/img/fc_oil.png'; // 전화 아이콘 이미지 추가
+import fc_oil_next from '../../assets/img/fc_oil_next.png'; // 전화 아이콘 이미지 추가
 import store_oil from '../../assets/img/store_oil.png'; // 헤드셋 아이콘 이미지 추가
+import store_oil_next from '../../assets/img/store_oil_next.png'; // 헤드셋 아이콘 이미지 추가
 import truckImage from '../../assets/img/truck.png'; // 헤드셋 아이콘 이미지 추가
 //협력사 로고 이미지
 import cjFreshwayLogo from '../../assets/img/cooperate/CJ프레시웨이.png';
