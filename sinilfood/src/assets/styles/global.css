@@ -277,33 +277,23 @@
     background-color: #ffffff;
   
   }
-  
-  /* 이미지 아이템 스타일 */
-  .oil-item {
-    
-    position: relative;
-    width: 50%; /* 두 이미지를 나란히 배치하기 위해 너비 설정 */
-  }
-  
-  .oil-image {
-    
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
   .oil-section {
     display: flex;
     justify-content: space-between; /* 이미지 간격 조절 */
     align-items: center; /* 이미지 세로 정렬 */
     gap: 20px; /* 두 이미지 사이의 간격 */
-    max-width: 1200px; /* 섹션 너비 */
+    max-width: 1370px; /* 섹션 너비 */
     margin: 0 auto; /* 가운데 정렬 */
+    
+    padding-top: 24px;
+    padding-bottom: 180px;
   }
+  
   
   .oil-item {
     position: relative;
-    flex: 2; /* 왼쪽 이미지는 더 큰 비율 */
-    border-radius: 5px; /* 모서리 둥글게 */
+    flex: 4.52; /* 왼쪽 이미지는 더 큰 비율 */
+    border-radius: 20px; /* 모서리 둥글게 */
     overflow: hidden; /* 경계선 넘는 부분 숨김 */
   }
   
@@ -312,10 +302,19 @@
   }
   
   .oil-image {
-    width: 100%; /* 이미지의 너비를 컨테이너에 맞춤 */
-    height: auto; /* 비율 유지 */
+    
+    width: 1109px;
+    height: 510px;
+    flex-shrink: 0;
   }
   
+  .oil-next-image {
+    
+    width: 245px;
+    height: 510px;
+    flex-shrink: 0;
+  }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -326,9 +325,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
   }
-  
+  .overlay-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 어두운 오버레이 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .overlay-text {
     font-family: 'Apple SD Gothic Neo';
     color: #ffffff;
@@ -348,7 +357,8 @@
     max-width: 1920px; /* 제한된 너비 설정 */
     margin: 0px auto; /* 중앙 정렬 및 위쪽 여백 */
     background-color: #ffffff;
-    border-radius: 60px; /* 모서리 둥글게 */
+    border-bottom-left-radius: 60px; /* 모서리 둥글게 */
+    border-bottom-right-radius: 60px; /* 모서리 둥글게 */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
     //border-left: 2px solid rgba(0, 0, 0, 0.1); /* 왼쪽 구분 선 */
     //border-right: 2px solid rgba(0, 0, 0, 0.1); /* 오른쪽 구분 선 */

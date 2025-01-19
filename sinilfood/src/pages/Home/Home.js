@@ -89,21 +89,20 @@ function App() {
             엄선된 품질과 철저한 관리를 바탕으로 최상의 제품만을 제공합니다.
           </p>
         </div>
-        <img src={logo_big} alt="Logo" className="page-logo" />
       </div>
 
       {/* 페이지 하단 콘텐츠 */}
       <div className="oil-section">
               <div className="oil-item">
-                <img src={fc_oil} alt="FC 전용유 제작" className="oil-image" />
+                <img src={fc_oil} alt="FC 전용유 제작" className="oil-image"/>
                 <div className="overlay">
                   <p className="overlay-text">FC 전용유 제작</p>
                 </div>
               </div>
               <div className="oil-item">
-                <img src={store_oil} alt="업소용 식용유" className="oil-image" />
+                <img src={fc_oil_next} alt="업소용 식용유" className="oil-next-image"/>
                 <div className="overlay">
-                  <p className="overlay-text">업소용 식용유</p>
+                  <p className="overlay-text"></p>
                 </div>
               </div>
             </div>
