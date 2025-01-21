@@ -1,16 +1,12 @@
 import React from 'react';
 import '../../assets/styles/global.css';
 import logo from '../../assets/img/sinil_logo.png'; 
-import logo_big from '../../assets/img/logo_big2.png'; // 로고 이미지
+//import logo_big from '../../assets/img/logo_big2.png'; // 로고 이미지
 import shinliFoodImage from '../../assets/img/SHINLI FOOD white.png'; // SHINLI FOOD 이미지
 import shinliFoodyellowImage from '../../assets/img/SHINLI FOOD.png'; // SHINLI FOOD 이미지
-import phoneIcon from '../../assets/img/phone.png'; // 전화 아이콘 이미지 추가
-import headsetIcon from '../../assets/img/headset.png'; // 헤드셋 아이콘 이미지 추가
-import fc_oil from '../../assets/img/fc_oil.png'; // 전화 아이콘 이미지 추가
-import fc_oil_next from '../../assets/img/fc_oil_next.png'; // 전화 아이콘 이미지 추가
-import store_oil from '../../assets/img/store_oil.png'; // 헤드셋 아이콘 이미지 추가
-import store_oil_next from '../../assets/img/store_oil_next.png'; // 헤드셋 아이콘 이미지 추가
-import truckImage from '../../assets/img/truck.png'; // 헤드셋 아이콘 이미지 추가
+import phoneIcon from '../../assets/img/phone.png'; 
+import headsetIcon from '../../assets/img/headset.png';
+import truckImage from '../../assets/img/truck.png'; 
 //협력사 로고 이미지
 import cjFreshwayLogo from '../../assets/img/cooperate/CJ프레시웨이.png';
 import cjJeilJedangLogo from '../../assets/img/cooperate/CJ제일제당.png';
@@ -30,6 +26,7 @@ import counsel_image from '../../assets/img/counsel_image.png'; // 상담 이미
 
 
 import Footer from "../../components/Footer"; //footer
+import OilSection from "./OilSection";
 
 // 프랜차이즈 슬라이더 컴포넌트 가져오기
 import FranchiseSlider from './FranchiseSlider.js';
@@ -92,20 +89,9 @@ function App() {
       </div>
 
       {/* 페이지 하단 콘텐츠 */}
-      <div className="oil-section">
-              <div className="oil-item">
-                <img src={fc_oil} alt="FC 전용유 제작" className="oil-image"/>
-                <div className="overlay">
-                  <p className="overlay-text">FC 전용유 제작</p>
-                </div>
-              </div>
-              <div className="oil-item">
-                <img src={fc_oil_next} alt="업소용 식용유" className="oil-next-image"/>
-                <div className="overlay">
-                  <p className="overlay-text"></p>
-                </div>
-              </div>
-            </div>
+      <OilSection />
+
+
       {/* 전국직영센터 콘텐츠 */}
       <div className="center-section">
         <div className="center-text">
