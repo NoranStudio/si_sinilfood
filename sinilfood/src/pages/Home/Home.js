@@ -6,7 +6,6 @@ import shinliFoodImage from '../../assets/img/SHINLI FOOD white.png'; // SHINLI 
 import shinliFoodyellowImage from '../../assets/img/SHINLI FOOD.png'; // SHINLI FOOD 이미지
 import phoneIcon from '../../assets/img/phone.png'; 
 import headsetIcon from '../../assets/img/headset.png';
-import truckImage from '../../assets/img/truck.png'; 
 //협력사 로고 이미지
 import cjFreshwayLogo from '../../assets/img/cooperate/CJ프레시웨이.png';
 import cjJeilJedangLogo from '../../assets/img/cooperate/CJ제일제당.png';
@@ -27,6 +26,8 @@ import counsel_image from '../../assets/img/counsel_image.png'; // 상담 이미
 
 import Footer from "../../components/Footer"; //footer
 import OilSection from "./OilSection";
+import CenterContents from "./CenterContents"; // CenterContents 파일 경로를 수정하세요
+
 
 // 프랜차이즈 슬라이더 컴포넌트 가져오기
 import FranchiseSlider from './FranchiseSlider.js';
@@ -93,19 +94,9 @@ function App() {
 
 
       {/* 전국직영센터 콘텐츠 */}
-      <div className="center-section">
-        <div className="center-text">
-          <h2 className="center-title">전국직영센터 운영으로</h2>
-          <h3 className="center-subtitle">전국 어디서나 신속하고 일관된 품질</h3>
-          <div className="button-group">
-            <button className="center-button active">전국 일일배송</button>
-            <button className="center-button">물류 네트워크</button>
-            <button className="center-button">뛰어난 상품성</button>
-            <button className="center-button">편리한 보관 시스템</button>
-          </div>
-        </div>
-        <img src={truckImage} alt="트럭 이미지" className="truck-image" />
-      </div>
+      <CenterContents/>
+
+
       {/* 협력사 및 제조사 상단 멘트 */}
       <div className="partners-header">
         <img src={shinliFoodyellowImage} alt="SHINLI FOOD" className="shinli-food-yellow-img" />
@@ -127,6 +118,7 @@ function App() {
         </div>
       </div>
       
+
       {/* 프랜차이즈 물류업체 슬라이더 */}
       <FranchiseSlider />
 

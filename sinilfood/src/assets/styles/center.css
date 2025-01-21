@@ -1,0 +1,108 @@
+
+  /* 전국직영센터 섹션 스타일 */
+  .center-section {
+    padding-top: 177PX;
+    display: flex;
+    flex-direction: column; /* 요소들을 세로로 정렬 */
+    align-items: flex-start;
+    max-width: 1920px; /* 제한된 너비 설정 */
+    margin: 0px auto; /* 중앙 정렬 및 위쪽 여백 */
+    background-color: #ffffff;
+    border-bottom-left-radius: 60px; /* 모서리 둥글게 */
+    border-bottom-right-radius: 60px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    //border-left: 2px solid rgba(0, 0, 0, 0.1); /* 왼쪽 구분 선 */
+    //border-right: 2px solid rgba(0, 0, 0, 0.1); /* 오른쪽 구분 선 */
+  }
+  
+  .center-text {
+    margin-bottom: 40px; /* 트럭 이미지와의 간격 */
+  }
+  
+  
+  .center-title {
+    padding-left: 276px;
+    font-family: Apple SD Gothic Neo;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+  }
+  
+  .center-title .normal-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+  }
+  
+  /* Black Highlight 스타일 */
+  .center-title .black-highlight {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+  }
+  
+  
+  .center-subtitle {
+    padding-bottom: 20px;
+    padding-left: 276px;
+    font-family: Apple SD Gothic Neo;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+  }
+  
+  .button-group {
+    padding-left: 276px;
+    display: flex;
+    gap: 20px; /* 버튼 사이 간격 */
+  }
+  
+  .center-button {
+    padding: 10px 22.5px;
+    border-radius: 100px; /* 둥근 버튼 */
+    background-color: #E6E6E6; /* 비활성화 배경색 */
+    color: #333; /* 비활성화 글씨 색상 */
+    font-family: Apple SD Gothic Neo;
+    font-weight: 200;
+    letter-spacing: -0.05em;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 색상 전환 효과 */
+  }
+  
+  .center-button.active {
+    background-color: #333; /* 활성화 배경색 */
+    color: #fff; /* 활성화 글씨 색상 */
+    font-family: Apple SD Gothic Neo;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    font-size: 28px;
+  }
+  
+  .center-button:hover {
+    background-color: #333; /* 호버 시 검은 배경색 */
+    color: #fff; /* 호버 시 흰색 글씨 */
+  }
+  
+  .truck-image {
+    padding-left: 276px;
+    flex: 1;
+    width: 1368.86px;
+    height: 510px;
+    top: 2388px;
+    left: 276px;
+    padding-bottom: 108px;
+    gap: 0px;
+    border-radius: 30px 0px 0px 0px;
+    opacity: 0px;
+  }
+  

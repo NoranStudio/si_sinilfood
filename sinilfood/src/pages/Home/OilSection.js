@@ -8,7 +8,9 @@ import store_oil_description from "../../assets/img/store_oil_description.png";
 import fc_oil_title from "../../assets/img/fc_oil_title.png";
 import store_oil_title from "../../assets/img/store_oil_title.png";
 import oil_arrow from "../../assets/img/arrow.png";
+
 import "../../assets/styles/global.css";
+import "../../assets/styles/oil.css";
 
 function OilSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -74,9 +76,7 @@ function OilSection() {
         <button className="arrow-button" onClick={handleNextSlide}>
           <img src={oil_arrow} alt="화살표 버튼" className="arrow-image" />
         </button>
-        <div
-          className={`overlay ${isFading ? "fade-to-dark" : ""}`}
-        ></div>
+        <div className={`overlay ${isFading ? "fade-to-dark" : ""}`}></div>
       </div>
       <div className="oil-item">
         <img
@@ -84,9 +84,7 @@ function OilSection() {
           alt="다음 이미지"
           className={`oil-next-image ${isFading ? "fade-out" : "fade-in"}`}
         />
-        <div
-          className={`overlay ${isFading ? "fade-to-dark" : ""}`}
-        >
+        <div className={`overlay ${isFading ? "fade-to-dark" : ""}`}>
           <p className={`overlay-text ${isFading ? "fade-out" : "fade-in"}`}>
             {slides[currentSlide].description}
           </p>
