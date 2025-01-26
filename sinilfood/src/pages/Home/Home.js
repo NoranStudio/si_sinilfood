@@ -1,69 +1,79 @@
-import React from 'react';
-import '../../assets/styles/global.css';
-import logo from '../../assets/img/sinil_logo.png'; 
+import React from "react";
+import "../../assets/styles/global.css";
+import logo from "../../assets/img/sinil_logo.png";
 //import logo_big from '../../assets/img/logo_big2.png'; // 로고 이미지
-import shinliFoodImage from '../../assets/img/SHINLI FOOD white.png'; // SHINLI FOOD 이미지
-import shinliFoodyellowImage from '../../assets/img/SHINLI FOOD.png'; // SHINLI FOOD 이미지
-import phoneIcon from '../../assets/img/phone.png'; 
-import headsetIcon from '../../assets/img/headset.png';
+import shinliFoodImage from "../../assets/img/SHINLI FOOD white.png"; // SHINLI FOOD 이미지
+import shinliFoodyellowImage from "../../assets/img/SHINLI FOOD.png"; // SHINLI FOOD 이미지
+import phoneIcon from "../../assets/img/phone.png";
+import headsetIcon from "../../assets/img/headset.png";
 //협력사 로고 이미지
-import cjFreshwayLogo from '../../assets/img/cooperate/CJ프레시웨이.png';
-import cjJeilJedangLogo from '../../assets/img/cooperate/CJ제일제당.png';
-import sajoLogo from '../../assets/img/cooperate/사조산업.png';
-import baeksulLogo from '../../assets/img/cooperate/백설.png';
-import ottogiLogo from '../../assets/img/cooperate/oddugi.png';
-import daekyungLogo from '../../assets/img/cooperate/daekyeong.png';
-import daesangLogo from '../../assets/img/cooperate/DAESANG.png';
-import lotteLogo from '../../assets/img/cooperate/LOTTE.png';
-import youngmiLogo from '../../assets/img/cooperate/영미산업(주).png';
-import hiveLogo from '../../assets/img/cooperate/hive.png';
-import bnbKoreaLogo from '../../assets/img/cooperate/bnb.png';
-import leftbutton from '../../assets/img/left_button.png';
-import rightbutton from '../../assets/img/right_button.png';
+import cjFreshwayLogo from "../../assets/img/cooperate/CJ프레시웨이.png";
+import cjJeilJedangLogo from "../../assets/img/cooperate/CJ제일제당.png";
+import sajoLogo from "../../assets/img/cooperate/사조산업.png";
+import baeksulLogo from "../../assets/img/cooperate/백설.png";
+import ottogiLogo from "../../assets/img/cooperate/oddugi.png";
+import daekyungLogo from "../../assets/img/cooperate/daekyeong.png";
+import daesangLogo from "../../assets/img/cooperate/DAESANG.png";
+import lotteLogo from "../../assets/img/cooperate/LOTTE.png";
+import youngmiLogo from "../../assets/img/cooperate/영미산업(주).png";
+import hiveLogo from "../../assets/img/cooperate/hive.png";
+import bnbKoreaLogo from "../../assets/img/cooperate/bnb.png";
+import leftbutton from "../../assets/img/left_button.png";
+import rightbutton from "../../assets/img/right_button.png";
 
-import counsel_image from '../../assets/img/counsel_image.png'; // 상담 이미지
-
+import counsel_image from "../../assets/img/counsel_image.png"; // 상담 이미지
 
 import Footer from "../../components/Footer"; //footer
 import OilSection from "./OilSection";
 import CenterContents from "./CenterContents"; // CenterContents 파일 경로를 수정하세요
 
-
 // 프랜차이즈 슬라이더 컴포넌트 가져오기
-import FranchiseSlider from './FranchiseSlider.js';
+import FranchiseSlider from "./FranchiseSlider.js";
+import Section1 from "./Section1.jsx";
+import Section2 from "./Section2.jsx";
+import Section3 from "./Section3.jsx";
 
 function App() {
   return (
     <div className="App">
       {/* 상단 배너 */}
-      <div className="banner">
+      {/* <div className="banner">
         <div className="logo">
           <img src={logo} alt="Sinilfood Logo" />
         </div>
-        
-        {/* 네비게이션 바 */}
+
         <nav className="navbar">
           <ul>
-            <li className="nav-item company"><a href="#about">회사소개</a></li>
-            <li className="nav-item business"><a href="#business">사업영역</a></li>
-            <li className="nav-item product"><a href="#products">제품소개</a></li>
-            <li className="nav-item service"><a href="#services">고객서비스</a></li>
+            <li className="nav-item company">
+              <a href="#about">회사소개</a>
+            </li>
+            <li className="nav-item business">
+              <a href="#business">사업영역</a>
+            </li>
+            <li className="nav-item product">
+              <a href="#products">제품소개</a>
+            </li>
+            <li className="nav-item service">
+              <a href="#services">고객서비스</a>
+            </li>
           </ul>
         </nav>
 
-        {/* SHINLI FOOD 이미지 */}
-        <img src={shinliFoodImage} alt="SHINLI FOOD" className="shinli-food-img" />
+        <img
+          src={shinliFoodImage}
+          alt="SHINLI FOOD"
+          className="shinli-food-img"
+        />
 
-        {/* 배너 텍스트 배치 */}
         <h1 className="title-large">식용유 및 식품 유통</h1>
         <h1 className="title-large">
           전문기업 <span className="highlight">신일푸드</span>
         </h1>
         <p className="description">
-          <strong>신일푸드</strong> 만의 독자적인 전용 물류 시스템으로 전국적 유통 체인망이 구축되어 있습니다.
+          <strong>신일푸드</strong> 만의 독자적인 전용 물류 시스템으로 전국적
+          유통 체인망이 구축되어 있습니다.
         </p>
 
-        {/* 우측 사이드 버튼 */}
         <div className="side-buttons">
           <a href="#contact" className="contact-button">
             <img src={phoneIcon} alt="Phone Icon" className="icon-image" />
@@ -72,58 +82,91 @@ function App() {
             <img src={headsetIcon} alt="Headset Icon" className="icon-image" />
           </a>
         </div>
-      </div>
+      </div> */}
+      <Section1 />
+      <Section2 />
+      <Section3 />
 
       {/* 페이지 내용 (예: 고객문의 페이지) */}
-      <div className="page-content">
+      {/* <div className="page-content">
         <div>
           <h2 className="page-title">
-            <span className="black-highlight">안전하고 품질 높은 제품</span><span className="normal-text">으로</span>
+            <span className="black-highlight">안전하고 품질 높은 제품</span>
+            <span className="normal-text">으로</span>
             <br />
-            <span className="yellow-highlight">외식산업에 최적화된 유통 서비스</span><span className="normal-text">를 선보입니다.</span>
+            <span className="yellow-highlight">
+              외식산업에 최적화된 유통 서비스
+            </span>
+            <span className="normal-text">를 선보입니다.</span>
           </h2>
           <p className="page-description">
-            신일푸드는 고객의 안전과 건강을 지키기 위해,<br />
+            신일푸드는 고객의 안전과 건강을 지키기 위해,
+            <br />
             엄선된 품질과 철저한 관리를 바탕으로 최상의 제품만을 제공합니다.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* 페이지 하단 콘텐츠 */}
-      <OilSection />
-
+      {/* <OilSection /> */}
 
       {/* 전국직영센터 콘텐츠 */}
-      <CenterContents/>
-
+      {/* <CenterContents /> */}
 
       {/* 협력사 및 제조사 상단 멘트 */}
-      <div className="partners-header">
-        <img src={shinliFoodyellowImage} alt="SHINLI FOOD" className="shinli-food-yellow-img" />
+      {/* <div className="partners-header">
+        <img
+          src={shinliFoodyellowImage}
+          alt="SHINLI FOOD"
+          className="shinli-food-yellow-img"
+        />
         <h2 className="main-heading">주식회사 신일푸드는</h2>
-        <h2 className="main-subheading">상생경영을 통해 더 큰 가치를 만들어갑니다.</h2>
+        <h2 className="main-subheading">
+          상생경영을 통해 더 큰 가치를 만들어갑니다.
+        </h2>
         <h3 className="partners-title">협력사 및 제조사</h3>
         <div className="partners-grid">
-        <div className="partner-item"><img src={cjFreshwayLogo} alt="CJ 프레시웨이" /></div>
-          <div className="partner-item"><img src={cjJeilJedangLogo} alt="CJ 제일제당" /></div>
-          <div className="partner-item"><img src={sajoLogo} alt="사조산업" /></div>
-          <div className="partner-item"><img src={baeksulLogo} alt="백설" /></div>
-          <div className="partner-item"><img src={ottogiLogo} alt="오뚜기" /></div>
-          <div className="partner-item"><img src={daekyungLogo} alt="대경O&T" /></div>
-          <div className="partner-item"><img src={daesangLogo} alt="대상" /></div>
-          <div className="partner-item"><img src={lotteLogo} alt="롯데" /></div>
-          <div className="partner-item"><img src={youngmiLogo} alt="영미산업" /></div>
-          <div className="partner-item"><img src={hiveLogo} alt="HIVE" /></div>
-          <div className="partner-item"><img src={bnbKoreaLogo} alt="BNB Korea" /></div>
+          <div className="partner-item">
+            <img src={cjFreshwayLogo} alt="CJ 프레시웨이" />
+          </div>
+          <div className="partner-item">
+            <img src={cjJeilJedangLogo} alt="CJ 제일제당" />
+          </div>
+          <div className="partner-item">
+            <img src={sajoLogo} alt="사조산업" />
+          </div>
+          <div className="partner-item">
+            <img src={baeksulLogo} alt="백설" />
+          </div>
+          <div className="partner-item">
+            <img src={ottogiLogo} alt="오뚜기" />
+          </div>
+          <div className="partner-item">
+            <img src={daekyungLogo} alt="대경O&T" />
+          </div>
+          <div className="partner-item">
+            <img src={daesangLogo} alt="대상" />
+          </div>
+          <div className="partner-item">
+            <img src={lotteLogo} alt="롯데" />
+          </div>
+          <div className="partner-item">
+            <img src={youngmiLogo} alt="영미산업" />
+          </div>
+          <div className="partner-item">
+            <img src={hiveLogo} alt="HIVE" />
+          </div>
+          <div className="partner-item">
+            <img src={bnbKoreaLogo} alt="BNB Korea" />
+          </div>
         </div>
-      </div>
-      
+      </div> */}
 
       {/* 프랜차이즈 물류업체 슬라이더 */}
-      <FranchiseSlider />
+      {/* <FranchiseSlider /> */}
 
       {/* 주식회사 신일푸드 새소식 섹션 */}
-      <div className="news-section">
+      {/* <div className="news-section">
         <div className="newsmain-header">
           <h3 className="newsmain-title">
             <span>주식회사 신일푸드</span>
@@ -134,40 +177,53 @@ function App() {
               <img src={leftbutton} alt="왼쪽 화살표" className="arrow-img" />
             </button>
             <button className="arrow-box right-arrow">
-              <img src={rightbutton} alt="오른쪽 화살표" className="arrow-img" />
+              <img
+                src={rightbutton}
+                alt="오른쪽 화살표"
+                className="arrow-img"
+              />
             </button>
           </div>
         </div>
         <div className="news-grid">
           <div className="news-item">
             <h4 className="news-notice">NOTICE</h4>
-            <h3 className="news-title">프랜차이즈산업협회, 2024 제2회 상생파...</h3>
+            <h3 className="news-title">
+              프랜차이즈산업협회, 2024 제2회 상생파...
+            </h3>
             <p className="news-description">
-              [2024 제2회 파트너스데이 행사 모습 (제공=KFA 상생파트너스위원회)]한...
+              [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+              상생파트너스위원회)]한...
             </p>
             <span className="news-date">2024. 10. 21</span>
           </div>
           <div className="news-item">
             <h4 className="news-notice">NOTICE</h4>
-            <h3 className="news-title">프랜차이즈산업협회, 2024 제2회 상생파...</h3>
+            <h3 className="news-title">
+              프랜차이즈산업협회, 2024 제2회 상생파...
+            </h3>
             <p className="news-description">
-              [2024 제2회 파트너스데이 행사 모습 (제공=KFA 상생파트너스위원회)]한...
+              [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+              상생파트너스위원회)]한...
             </p>
             <span className="news-date">2024. 10. 21</span>
           </div>
           <div className="news-item">
             <h4 className="news-notice">NOTICE</h4>
-            <h3 className="news-title">프랜차이즈산업협회, 2024 제2회 상생파...</h3>
+            <h3 className="news-title">
+              프랜차이즈산업협회, 2024 제2회 상생파...
+            </h3>
             <p className="news-description">
-              [2024 제2회 파트너스데이 행사 모습 (제공=KFA 상생파트너스위원회)]한...
+              [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+              상생파트너스위원회)]한...
             </p>
             <span className="news-date">2024. 10. 21</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* 상담센터 섹션 */}
-      <div className="counsel-center">
+      {/* <div className="counsel-center">
         <div className="counsel-content">
           <h2 className="counsel-title">
             협력사 사업문의의 <span className="highlight">상담센터</span>
@@ -206,12 +262,10 @@ function App() {
             className="counsel-image-file"
           />
         </div>
-      </div>
+      </div> */}
       {/* Footer */}
-      <Footer />
-  </div>
-  
-
+      {/* <Footer /> */}
+    </div>
   );
 }
 
