@@ -33,7 +33,7 @@ import Section1 from "./Section1.jsx";
 import Section2 from "./Section2.jsx";
 import Section3 from "./Section3.jsx";
 
-function App() {
+function Home() {
   return (
     <div 
       style={{
@@ -280,4 +280,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
