@@ -2,12 +2,14 @@
 .App {
     text-align: center;
     font-family: 'Arial', sans-serif;
-    width: 100%;
+    /* width: 100%; */
     
     /* 여기부터 */
-    /* display: flex; */
+    width: 100%;
+    display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
   }
   
   /* 배너 스타일 (기본 크기) */

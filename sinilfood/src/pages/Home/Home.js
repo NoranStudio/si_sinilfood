@@ -35,7 +35,18 @@ import Section3 from "./Section3.jsx";
 
 function App() {
   return (
-    <div className="App">
+    <div 
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        maxWidth: 1920,
+        // minWidth: 1440,
+        // height: 950,
+      }}
+    >
       {/* 상단 배너 */}
       {/* <div className="banner">
         <div className="logo">
@@ -84,8 +95,8 @@ function App() {
         </div>
       </div> */}
       <Section1 />
-      <Section2 />
-      <Section3 />
+      {/* <Section2 />
+      <Section3 /> */}
 
       {/* 페이지 내용 (예: 고객문의 페이지) */}
       {/* <div className="page-content">
