@@ -1,0 +1,161 @@
+
+  /* 배너 스타일 (기본 크기) */
+  .banner {
+    background-size: cover;
+    width: 100%; /* 반응형 크기 */
+    max-width: 1920px;
+    height: 950px; /* 기본 높이 */
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    text-align: left;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+  
+    overflow: hidden; /* 라운드된 부분에서 이미지가 넘치지 않도록 처리 */
+    margin: 0 auto; /* 배너 중앙 정렬 */
+    z-index: 1;
+    
+  }
+  
+  /* 로고 위치 설정 */
+  .logo img {
+    position: absolute;
+    top: 44px;   /* 위쪽으로부터 44px */
+    left: 320px; /* 왼쪽으로부터 320px */
+    width: 176px; /* 너비 176px */
+    height: 62px; /* 높이 62px */
+  }
+  
+  /* 네비게이션 스타일 */
+  .navbar1 {
+    position: absolute;
+    top: 64px;      /* 위쪽에서 64px */
+    left: 1091px;   /* 왼쪽에서 1091px */
+    display: flex;
+    z-index: 3;     /* 네비게이션이 배너 위에 보이도록 설정 */
+  }
+  
+  .navbar ul {
+    list-style: none;   /* 리스트 스타일 제거 (기본 불릿 삭제) */
+    display: flex;      /* 리스트 항목을 가로로 배치 */
+    padding: 0;        /* 기본 padding 제거 */
+    margin: 0;         /* 기본 margin 제거 */
+    gap: 63px;         /* 각 항목 사이에 63px 간격 설정 */
+  }
+  
+  .navbar li {
+    display: inline-block; /* 리스트 항목을 가로로 배치 */
+  }
+  
+  .navbar a {
+    font-family: 'Apple SD Gothic Neo', sans-serif; /* 폰트 설정 */
+    font-size: 18px;       /* 폰트 크기 */
+    font-weight: 50;      /* 폰트 가중치 */
+    line-height: 21.6px;   /* 줄 간격 */
+    text-align: center;    /* 텍스트 중앙 정렬 */
+    color: white;          /* 텍스트 색상 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    display: block;        /* 앵커 태그를 블록 요소로 설정 */
+  }
+  
+  .navbar a:hover {
+  
+  }
+  
+  /* SHINLI FOOD 이미지 */
+  .shinli-food-img {
+    position: absolute;
+    width: 210px;
+    height: 28px;
+    top: 371px;
+    left: 320px;
+    
+  }
+  
+  /* 배너 텍스트 스타일 */
+  .title-large {
+    position: absolute;
+    height: 30px;
+    top: 420px;
+    left: 320px;
+    font-family: Apple SD Gothic Neo;
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 30px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    
+  }
+  
+  .title-large + .title-large {
+    top: 485px;
+  }
+  
+  .title-large .highlight {
+    font-weight: 800;
+    color: white;
+  }
+  
+  /* 설명 텍스트 스타일 */
+  .description {
+    position: absolute;
+    width: 480px;
+    height: 70px;
+    top: 570px;
+    left: 320px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Apple SD Gothic Neo;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    font-family: Apple SD Gothic Neo;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    font-family: Apple SD Gothic Neo;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    text-align: left;
+  }
+  
+  .description strong {
+    font-weight: 700;
+  }
+  /* 우측 사이드 버튼 */
+  .side-buttons {
+    position: absolute;
+    right: 24px;
+    top: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .contact-button {
+    background-color: #ffaa00;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .contact-button:hover {
+    background-color: #ff8800;
+  }
+  
