@@ -4,7 +4,8 @@
     align-items: center;
     width: 100%;
     min-width: 1440px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .business-banner {
