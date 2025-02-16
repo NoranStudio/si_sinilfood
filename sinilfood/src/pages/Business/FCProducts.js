@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './FCProducts.css';
 import Navbar from '../../components/Navbar';
+import BusinessNavbar from '../../components/business/BusinessNavbar';
 
 function FCProducts() {
+    const [activeTab, setActiveTab] = useState('manufacturing');
+
     return (
         <div className="business-wrapper">
-            <div className="business-container">
-                <Navbar />
-                <div className="business-content">
-                    <h1>사업영역</h1>
-                    <section className="business-intro">
-                        <h2>신일푸드의 사업영역을 소개합니다</h2>
-                        <p>고객의 신뢰와 함께 성장하는 기업이 되겠습니다.</p>
-                    </section>
-                    {/* 추가 섹션들이 들어갈 예정 */}
+            <div className="business-banner">
+                <div className="business-container">
+                    <Navbar />
+                    <div className="business-content">
+                        <div className="banner-title">
+                            <p className="light-text">프랜차이즈를 위한</p>
+                            <p className="bold-text">맞춤형 전용유 제조 및 배송</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <BusinessNavbar activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
     );
 }
