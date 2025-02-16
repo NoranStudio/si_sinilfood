@@ -1,0 +1,57 @@
+.business-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 1440px;
+    overflow: hidden;
+}
+
+.business-banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('../../assets/img/business/business_banner.png');
+    background-repeat: no-repeat;
+    background-size: 1920px 500px;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.business-container {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+}
+
+.business-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.banner-title {
+    width: 494px;
+    height: 130px;
+    text-align: left;
+}
+
+.banner-title p {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+}
+
+.banner-title .light-text {
+    font-weight: 300;
+}
+
+.banner-title .bold-text {
+    font-weight: 700;
+}
