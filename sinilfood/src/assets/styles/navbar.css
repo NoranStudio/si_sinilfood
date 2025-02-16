@@ -44,3 +44,15 @@
     margin: 0;
     padding: 0;
 }
+
+.nav-list a {
+    color: rgba(255, 255, 255, 0.7); /* 기본 상태는 약간 투명한 흰색 */
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.nav-list a.active {
+    color: #ffffff; /* 활성화된 상태는 완전한 흰색 */
+    font-weight: 700;
+}

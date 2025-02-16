@@ -1,28 +1,43 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/img/sinil_logo.png';
 import '../assets/styles/navbar.css';
 
 function Navbar() {
+    const location = useLocation();
+
     return (
         <div className="nav-wrapper">
             <div className="logo-container">
-                <img src={logo} alt="Sinilfood Logo" />
+                <Link to="/">
+                    <img src={logo} alt="Sinilfood Logo" />
+                </Link>
             </div>
 
             <nav className="navbar">
                 <ul className="nav-list">
                     <li>
-                        <Link to="/about">회사소개</Link>
+                        <a href="#about" className={location.hash === '#about' ? 'active' : ''}>
+                            회사소개
+                        </a>
                     </li>
                     <li>
-                        <Link to="/business/fc-products">사업영역</Link>
+                        <Link
+                            to="/business/fc-products"
+                            className={location.pathname.includes('business') ? 'active' : ''}
+                        >
+                            사업영역
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/products">제품소개</Link>
+                        <a href="#products" className={location.hash === '#products' ? 'active' : ''}>
+                            제품소개
+                        </a>
                     </li>
                     <li>
-                        <Link to="/services">고객서비스</Link>
+                        <a href="#services" className={location.hash === '#services' ? 'active' : ''}>
+                            고객서비스
+                        </a>
                     </li>
                 </ul>
             </nav>

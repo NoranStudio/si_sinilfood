@@ -1,16 +1,14 @@
 import React from 'react';
 import './FCProducts.css';
-import businessBanner from '../../assets/img/business/business_banner.png';
+import Navbar from '../../components/Navbar';
 
 function FCProducts() {
     return (
-        <div>
-            <home_banner />
-            <div className="business-page">
-                <div className="business-banner" style={{ backgroundImage: `url(${businessBanner})` }}>
-                    <h1>사업영역</h1>
-                </div>
+        <div className="business-wrapper">
+            <div className="business-container">
+                <Navbar />
                 <div className="business-content">
+                    <h1>사업영역</h1>
                     <section className="business-intro">
                         <h2>신일푸드의 사업영역을 소개합니다</h2>
                         <p>고객의 신뢰와 함께 성장하는 기업이 되겠습니다.</p>
