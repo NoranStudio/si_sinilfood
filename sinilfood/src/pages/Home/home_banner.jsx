@@ -26,60 +26,61 @@ const home_banner = () => {
                 overflow: 'hidden',
             }}
         >
-            <Navbar /> {/* Navbar 컴포넌트 사용 */}
-            <div className="main-content" style={{ flex: 1, display: 'flex' }}>
-                <div
-                    style={{
-                        flex: 1,
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        // alignItems: "center",
-                        // backgroundColor: "#0fa",
-                    }}
-                >
+            <div
+                style={{
+                    display: 'flex',
+                    flex: 1,
+                    flexDirection: 'column',
+                    width: 1440,
+                }}
+            >
+                <Navbar />
+                <div className="main-content" style={{ flex: 1, display: 'flex' }}>
                     <div
                         style={{
-                            width: 400,
-                            //   backgroundColor: "#cca",
+                            flex: 1,
                             display: 'flex',
                             flexDirection: 'column',
-                            justifyContent: 'left',
-                            alignItems: 'start',
+                            justifyContent: 'center',
                         }}
                     >
-                        <img
-                            src={shinliFoodImage}
-                            alt="SHINLI FOOD"
-                            //   className="shinli-food-img"
-                        />
-                        <h1>식용유 및 식품 유통</h1>
-                        <h1>
-                            전문기업 <span>신일푸드</span>
-                        </h1>
-                        <p>
-                            <strong>신일푸드</strong> 만의 독자적인 전용 물류 시스템으로 전국적 유통 체인망이 구축되어
-                            있습니다.
-                        </p>
+                        <div
+                            style={{
+                                width: 400,
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'left',
+                                alignItems: 'start',
+                            }}
+                        >
+                            <img src={shinliFoodImage} alt="SHINLI FOOD" />
+                            <h1>식용유 및 식품 유통</h1>
+                            <h1>
+                                전문기업 <span>신일푸드</span>
+                            </h1>
+                            <p>
+                                <strong>신일푸드</strong> 만의 독자적인 전용 물류 시스템으로 전국적 유통 체인망이
+                                구축되어 있습니다.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div
-                    style={{
-                        flex: 1,
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        alignItems: 'end',
-                        // backgroundColor: "#9a8",
-                    }}
-                >
-                    <div style={{ display: 'flex', flexDirection: 'column' }}>
-                        <a href="#contact">
-                            <img src={phoneIcon} alt="Phone Icon" />
-                        </a>
-                        <a href="#contact">
-                            <img src={headsetIcon} alt="Headset Icon" />
-                        </a>
+                    <div
+                        style={{
+                            flex: 1,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            alignItems: 'end',
+                        }}
+                    >
+                        <div style={{ display: 'flex', flexDirection: 'column' }}>
+                            <a href="#contact">
+                                <img src={phoneIcon} alt="Phone Icon" />
+                            </a>
+                            <a href="#contact">
+                                <img src={headsetIcon} alt="Headset Icon" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

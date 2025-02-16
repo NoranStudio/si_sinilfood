@@ -8,16 +8,14 @@
     flex-direction: row;
     justify-content: space-evenly;
     height: 150px;
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
-.logo-container {
+.logo-wrapper {
     display: flex;
     align-items: center;
 }
 
-.logo-container img {
+.logo-wrapper img {
     height: 40px;
 }
 
@@ -32,17 +30,23 @@
     flex-direction: row;
     gap: 50px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
     list-style: none;
 }
 
-.nav-menu li a {
+.nav-item a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
 }
 
-.nav-menu li a:hover {
-    color: #f0f0f0;
+.nav-item a:hover {
+    opacity: 0.8;
 }
