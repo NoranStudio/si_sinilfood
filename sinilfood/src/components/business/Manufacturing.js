@@ -2,6 +2,7 @@ import React from 'react';
 import './Business.css';
 import oilFeature from '../../assets/img/business/oil_feature.png';
 import roleGraph from '../../assets/img/business/role_graph.png';
+import limitImg from '../../assets/img/business/limit.png';
 
 function Manufacturing() {
     return (
@@ -111,6 +112,9 @@ function Manufacturing() {
                     <h3 className="advantages-title" style={{ whiteSpace: 'nowrap' }}>
                         본사물류의 한계
                     </h3>
+                    <div className="limit-content">
+                        <img src={limitImg} alt="본사물류의 한계" className="limit-image" />
+                    </div>
                 </div>
             </div>
         </div>
