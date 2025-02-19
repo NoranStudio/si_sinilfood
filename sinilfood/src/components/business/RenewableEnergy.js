@@ -6,6 +6,7 @@ import globeImg from '../../assets/img/business/globe.png';
 import fuelImg from '../../assets/img/business/fuel.png';
 import bioDieselExplainedImg from '../../assets/img/business/bioDiesel_explained.png';
 import foodExplainedImg from '../../assets/img/business/food_explained.png';
+import recycleGraphImg from '../../assets/img/business/recycle_graph.png';
 
 function RenewableEnergy() {
     return (
@@ -76,32 +77,77 @@ function RenewableEnergy() {
                 <p className="renewable-business-description">
                     신일푸드는 일반/사업장 폐기물 중간재활용업을 취득하여 폐기 또는 버려지는 각종의 식물성잔재물,
                     동물성잔재물, 튀김식품 잔재물, 제과, 제빵, 제면 부산물에서 바이오 디젤, 단미 사료를 추출, 회수 하는
-                    사업을 진행하고 있습니다.{' '}
+                    사업을 진행하고 있습니다.
                     <span className="bold-text">
                         신일푸드는 버려지는 자원을 재활용함으로써 환경을 보호하는 친환경 기업입니다.
                     </span>
                 </p>
-            </div>
-            <div className="renewable-images">
-                <div className="renewable-image-container">
-                    <img src={bioDieselExplainedImg} alt="바이오디젤 설명" className="renewable-detail-image" />
-                    <div className="renewable-image-content">
-                        <h4 className="renewable-image-title">바이오디젤</h4>
-                        <p className="renewable-image-description">
-                            식물성 기름이나 동물성 지방을 원료로 하여 만든 바이오연료로 바이오에탄올과 함께 가장 널리
-                            사용된다. 이때 만든 바이오디젤이 바로 지방산 메틸에스테르(FAME)이다.
-                        </p>
+                <div className="renewable-images">
+                    <div className="renewable-image-container">
+                        <img src={bioDieselExplainedImg} alt="바이오디젤 설명" className="renewable-detail-image" />
+                        <div className="renewable-image-content">
+                            <h4 className="renewable-image-title">바이오디젤</h4>
+                            <p className="renewable-image-description">
+                                식물성 기름이나 동물성 지방을 원료로 하여 만든 바이오연료로 바이오에탄올과 함께 가장
+                                널리 사용된다. 이때 만든 바이오디젤이 바로 지방산 메틸에스테르(FAME)이다.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="renewable-image-container">
+                        <img src={foodExplainedImg} alt="식품 설명" className="renewable-detail-image" />
+                        <div className="renewable-image-content">
+                            <h4 className="renewable-image-title">단미사료 (배합사료)</h4>
+                            <p className="renewable-image-description">
+                                식물성, 동물성 또는 광물성 물질로서 사료로 직접 사용되거나, 배합사료의 원료로 사용된다.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div className="renewable-image-container">
-                    <img src={foodExplainedImg} alt="식품 설명" className="renewable-detail-image" />
-                    <div className="renewable-image-content">
-                        <h4 className="renewable-image-title">단미사료 (배합사료)</h4>
-                        <p className="renewable-image-description">
-                            식물성, 동물성 또는 광물성 물질로서 사료로 직접 사용되거나, 배합사료의 원료로 사용된다.
-                        </p>
+                <h3 className="renewable-business-title">재활용시 비용절감 효과</h3>
+                <p className="renewable-business-description">
+                    식품공장에서 발생하는 부산물을 평균 데이터로 사용 한 통계입니다.
+                </p>
+                <div className="recycle-section">
+                    <div className="recycle-graph-box">
+                        <img src={recycleGraphImg} alt="재활용 비용절감 그래프" />
+                    </div>
+                    <div className="recycle-boxes">
+                        <div className="recycle-box">
+                            <h4 className="recycle-box-title">
+                                부산물 재활용 시
+                                <br />
+                                합산이익
+                            </h4>
+                            <div className="recycle-box-content">
+                                <p className="recycle-box-amount">+30,720,000원</p>
+                                <p className="recycle-box-description">
+                                    연간 발생하는 부가이익
+                                    <br />
+                                    (폐기물 배출 비용 절감+매입 비용)
+                                </p>
+                            </div>
+                        </div>
+                        <div className="recycle-box">
+                            <h4 className="recycle-box-title">
+                                부산물 폐기
+                                <br />
+                                비용 절감
+                            </h4>
+                            <div className="recycle-box-content">
+                                <p className="recycle-box-amount">-13,680,000원</p>
+                                <p className="recycle-box-description">
+                                    부산물을 폐기물로 배출할 경우
+                                    <br />
+                                    발생하는 처리비용 (KG당 150원 계산)
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <h3 className="renewable-business-title">폐식용유 수거를 통한 BD 생산 과정</h3>
+                <p className="renewable-business-description">
+                    국내에서 배출되는 폐식용유 수거 및 이를 이용한 바이오디젤 생산은 완벽한 재생순환 시스템입니다.
+                </p>
             </div>
         </div>
     );
