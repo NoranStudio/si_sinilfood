@@ -1,6 +1,9 @@
 import React from 'react';
 import './Business.css';
 import biodieselImg from '../../assets/img/business/biodiesel.png';
+import batteryImg from '../../assets/img/business/battery.png';
+import globeImg from '../../assets/img/business/globe.png';
+import fuelImg from '../../assets/img/business/fuel.png';
 
 function RenewableEnergy() {
     return (
@@ -31,6 +34,38 @@ function RenewableEnergy() {
                             이산화탄소 배출을 80% 줄입니다. 우리나라에서는 경유에도 바이오디젤이 혼합되어 있으며, 혼합
                             비율은 현재 3.5%입니다. 2030년까지 이 비율을 5%에서 8%로 늘릴 계획입니다.
                         </p>
+                    </div>
+                </div>
+                <div className="biodiesel-boxes">
+                    <div className="biodiesel-box first">
+                        <p className="box-description">
+                            일반 경유에 비해
+                            <br />
+                            탄소 배출량이 적게 배출되며
+                        </p>
+                        <img src={batteryImg} alt="배터리" className="box-image" />
+                        <p className="box-sub-description">오염물질과 유해 물질 배출량이 매우 낮은</p>
+                        <p className="box-title">청정 에너지원</p>
+                    </div>
+                    <div className="biodiesel-box second">
+                        <p className="box-description">
+                            바이오디젤은 기존 연료에 비해 이산화탄소
+                            <br />
+                            배출량이 40-60% 적게배출
+                        </p>
+                        <img src={globeImg} alt="지구" className="box-image globe" />
+                        <p className="box-sub-description">바이오디젤과 같은 신재생에너지는 탄소중립의</p>
+                        <p className="box-title second">현실적인 대안</p>
+                    </div>
+                    <div className="biodiesel-box third">
+                        <p className="box-description">
+                            2030년까지 바이오디젤 의무혼합 비율을
+                            <br />
+                            5%에서 8%까지 상향
+                        </p>
+                        <img src={fuelImg} alt="연료" className="box-image fuel" />
+                        <p className="box-sub-description">우리나라 경유차량 바이오디젤 의무혼합 비율</p>
+                        <p className="box-title third">3.5%</p>
                     </div>
                 </div>
             </div>

@@ -360,3 +360,95 @@
     display: inline;
     margin-bottom: 0;
 }
+
+.biodiesel-boxes {
+    display: flex;
+    gap: 11px;
+    justify-content: center;
+    margin-top: 193px;
+}
+
+.biodiesel-box {
+    box-sizing: border-box;
+    width: 449px;
+    height: 555px;
+    border-radius: 35px;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.biodiesel-box.first {
+    border-color: #499953;
+}
+
+.biodiesel-box.second {
+    border-color: #94b858;
+}
+
+.biodiesel-box.third {
+    border-color: #eab54d;
+}
+
+.box-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #000000;
+    margin-bottom: 33.26px;
+}
+
+.box-image {
+    width: 163.9px;
+    height: 222.88px;
+    margin-bottom: 28.86px;
+}
+
+.box-sub-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #717071;
+    margin-bottom: 0;
+}
+
+.box-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #499953;
+    margin-top: 0;
+}
+
+.box-title.second {
+    color: #94b858;
+}
+
+.box-title.third {
+    color: #eab54d;
+}
+
+.box-image.globe {
+    width: 237px;
+    height: 227px;
+}
+
+.box-image.fuel {
+    width: 233px;
+    height: 258px;
+}
