@@ -276,3 +276,87 @@
     width: 799px;
     height: 921px;
 }
+
+.renewable-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 115px;
+}
+
+.renewable-title {
+    width: 700px;
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+
+.highlight-text {
+    color: #499953;
+}
+
+.biodiesel-section {
+    width: 100vw;
+    height: 562px;
+    margin-top: 68px;
+    position: relative;
+    overflow: hidden;
+}
+
+.biodiesel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.biodiesel-content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1280px;
+    padding-top: 82px;
+    color: #ffffff;
+    z-index: 1;
+    text-align: left;
+}
+
+.biodiesel-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 65px;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+}
+
+.biodiesel-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+    margin-bottom: 30px;
+}
+
+.biodiesel-description-bold {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+}
+
+.extra-bold {
+    font-weight: 700;
+    display: inline;
+    margin-bottom: 0;
+}
