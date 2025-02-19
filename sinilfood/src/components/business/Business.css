@@ -76,6 +76,17 @@
     border-radius: 50%;
 }
 
+.feature-image-border {
+    box-sizing: border-box;
+    position: absolute;
+    width: 574px;
+    height: 574px;
+    left: -14px; /* (574px - 546px) / 2 = 14px */
+    top: -14px;
+    border: 3px solid #e6e6e6;
+    border-radius: 50%;
+}
+
 .feature-title {
     position: absolute;
     width: 100%;
@@ -242,7 +253,6 @@
     align-items: center;
     margin-left: 374px;
     width: 765.83px;
-    margin-top: 38px;
 }
 
 .role-content {

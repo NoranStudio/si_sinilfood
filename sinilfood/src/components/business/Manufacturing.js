@@ -18,6 +18,7 @@ function Manufacturing() {
                 </p>
                 <div className="feature-section">
                     <div className="feature-image-container">
+                        <div className="feature-image-border"></div>
                         <img src={oilFeature} alt="전용유의 특징" className="feature-image" />
                         <h3 className="feature-title">전용유의 특징</h3>
                     </div>
