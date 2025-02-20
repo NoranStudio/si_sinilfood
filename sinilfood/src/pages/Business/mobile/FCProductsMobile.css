@@ -1,0 +1,59 @@
+.business-wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.business-banner-mobile {
+    width: 100%;
+    height: 230px;
+    background-image: url('../../../assets/img/business/mobile/business_banner_mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container-mobile {
+    width: 100px;
+    height: 35.23px;
+}
+
+.logo-container-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.business-content-mobile {
+    margin-top: 82px;
+    display: flex;
+    text-align: left;
+    padding: 0;
+    flex-direction: column;
+}
+
+.business-content-mobile .light-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.business-content-mobile .bold-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin: 0;
+}

@@ -56,3 +56,46 @@
 .banner-title .bold-text {
     font-weight: 700;
 }
+
+.business-banner-mobile {
+    width: 360px;
+    height: 220px;
+    background-color: rgba(184, 184, 184, 0.56);
+    position: relative;
+}
+
+.business-container-mobile {
+    width: 360px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.business-content-mobile {
+    padding: 30px;
+}
+
+.business-content-mobile .banner-title {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.business-content-mobile .light-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.business-content-mobile .bold-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin: 0;
+}

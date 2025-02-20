@@ -1,0 +1,58 @@
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex: 2;
+}
+
+.nav-list {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+/* 리스트 스타일 제거 */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: rgba(255, 255, 255, 0.7); /* 기본 상태는 약간 투명한 흰색 */
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.nav-list a.active {
+    color: #ffffff; /* 활성화된 상태는 완전한 흰색 */
+    font-weight: 700;
+}
