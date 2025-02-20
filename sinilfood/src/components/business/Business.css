@@ -620,3 +620,80 @@
     letter-spacing: -0.05em;
     color: #262626;
 }
+
+.process-section {
+    margin-top: 27px;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19.73px;
+    width: 1360px;
+}
+
+.process-box {
+    width: 440px;
+    height: 460px;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.process-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.process-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.process-number-circle {
+    width: 80px;
+    height: 80px;
+    background: #499953;
+    border-radius: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process-number {
+    font-family: 'Pretendard Variable';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+    color: #ffffff;
+}
+
+.process-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+    color: #ffffff;
+    margin-top: 200px;
+    margin-left: 29px;
+}
+
+.process-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 24px;
+    text-align: left;
+    line-height: 34px;
+    letter-spacing: -1.2px;
+    color: #ffffff;
+    margin-top: 11px;
+    margin-left: 29px;
+    width: 380px;
+    white-space: pre-line;
+}
