@@ -31,7 +31,7 @@ function ManufacturingMobile() {
                     </p>
                 </div>
 
-                <div className="backline-mobile"></div>
+                <hr className="backline-mobile" />
 
                 <h3 className="advantages-title-mobile">전용유 활용시 장점</h3>
                 <div className="advantages-boxes-mobile">
@@ -50,8 +50,7 @@ function ManufacturingMobile() {
                         </p>
                     </div>
                 </div>
-
-                <div className="backline-bottom-mobile"></div>
+                <hr className="biodiesel-divider-mobile" />
 
                 <div className="advantages-section-mobile">
                     <h3 className="advantages-title-mobile">(주)신일푸드 선정시 장점</h3>
@@ -83,8 +82,7 @@ function ManufacturingMobile() {
                         </div>
                     </div>
                 </div>
-
-                <div className="backline-bottom-mobile"></div>
+                <hr className="biodiesel-divider-mobile" />
 
                 <div className="advantages-section-mobile">
                     <h3 className="advantages-title-mobile">주체별 역할</h3>
@@ -97,8 +95,7 @@ function ManufacturingMobile() {
                         <img src={managementMobile} alt="주체별 역할 그래프" className="role-graph-mobile" />
                     </div>
                 </div>
-
-                <div className="backline-bottom-mobile"></div>
+                <hr className="biodiesel-divider-mobile" />
 
                 <div className="advantages-section-mobile">
                     <h3 className="advantages-title-mobile" style={{ whiteSpace: 'nowrap' }}>
