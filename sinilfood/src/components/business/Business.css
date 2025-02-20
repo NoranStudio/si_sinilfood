@@ -697,3 +697,232 @@
     width: 380px;
     white-space: pre-line;
 }
+
+.container-section {
+    width: 1370px;
+    background: #fbfbfb;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 193px;
+    margin-left: 40px;
+    padding: 69px 40px;
+}
+
+.container-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 65px;
+    letter-spacing: -1.9px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.container-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    color: #262626;
+    width: 1002px;
+    text-align: left;
+    white-space: pre-line;
+}
+
+.storage-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.storage-image {
+    width: 306.45px;
+    height: 411.09px;
+    object-fit: cover;
+}
+
+.biodiesel-info {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.biodiesel-info-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 65px;
+    letter-spacing: -1.9px;
+    color: #499953;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.biodiesel-info-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    color: #262626;
+    width: 1275px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.biodiesel-background {
+    margin-top: 40px;
+}
+
+.background-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 65px;
+    letter-spacing: -1.9px;
+    color: #000000;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.background-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    color: #262626;
+    width: 1000px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.rfs-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    color: #262626;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.rfs-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    color: #262626;
+    width: 1084px;
+    text-align: left;
+}
+
+.rfs-graph-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 61px;
+}
+
+.rfs-graph-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+.rfs-graph {
+    width: 1280px;
+    height: 130.8px;
+    object-fit: contain;
+    margin-bottom: 19px;
+}
+
+.rfs-graph-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: -0.9px;
+    color: #262626;
+    text-align: center;
+    width: 1277px;
+}
+
+.biodiesel-effects {
+    margin-top: 80px;
+}
+
+.effects-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 65px;
+    letter-spacing: -1.9px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.effects-box {
+    width: 1275px;
+    background: #ededed;
+    border-radius: 30px;
+    padding: 27px 40px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.effects-box-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    color: #262626;
+    width: 250px;
+    text-align: left;
+}
+
+.effects-box-description {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    color: #262626;
+    width: 945px;
+    margin-left: 100px;
+}
+
+.effects-box-description ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.effects-box-description li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 6px;
+}
+
+.effects-box-description li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    color: #262626;
+}

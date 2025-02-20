@@ -16,6 +16,11 @@ import process6 from '../../assets/img/business/process/process_6.png';
 import process7 from '../../assets/img/business/process/process_7.png';
 import process8 from '../../assets/img/business/process/process_8.png';
 import process9 from '../../assets/img/business/process/process_9.png';
+import storage1 from '../../assets/img/business/storage/storage_1.png';
+import storage2 from '../../assets/img/business/storage/storage_2.png';
+import storage3 from '../../assets/img/business/storage/storage_3.png';
+import storage4 from '../../assets/img/business/storage/storage_4.png';
+import playGraph from '../../assets/img/business/play_graph.png';
 
 function RenewableEnergy() {
     return (
@@ -215,6 +220,112 @@ function RenewableEnergy() {
                             </div>
                         </div>
                     ))}
+                </div>
+            </div>
+            <div className="container-section">
+                <h3 className="container-title">자체 제작 전용 보관용기</h3>
+                <p className="container-description">
+                    신일푸드는 부산물 보관으로 인한 화재위험을 예방 하고자 자체적으로 보관용기를 제작하여
+                    <br /> 비치 후 주기적인 전용 보관용기 교체 및 분기마다 전문 청소업체를 통한 폐기물 보관장 청소까지
+                    진행하고 있습니다.
+                </p>
+                <div className="storage-images">
+                    <img src={storage1} alt="보관용기 1" className="storage-image" />
+                    <img src={storage2} alt="보관용기 2" className="storage-image" />
+                    <img src={storage3} alt="보관용기 3" className="storage-image" />
+                    <img src={storage4} alt="보관용기 4" className="storage-image" />
+                </div>
+
+                <div className="biodiesel-info">
+                    <h3 className="biodiesel-info-title">바이오디젤(Bio Diesel)이란?</h3>
+                    <p className="biodiesel-info-description">
+                        동물성 유지(소기름, 돼지기름 등) 및 식물성 유지(폐식용유, 유채유 등)를 에탄올과 반응시켜 생산한
+                        친환경 수송연료(지방산 메틸에스테르)입니다.
+                        <br />
+                        기존의 경유 차량 엔진의 설비 변경 없이 사용가능하고, 폐식용유 재활용을 통한 수질 개선 및
+                        대기오염물질 배출이 없는 친환경 신재생에너지입니다.
+                    </p>
+
+                    <div className="biodiesel-background">
+                        <h3 className="background-title">바이오디젤 보급 추진 배경</h3>
+                        <p className="background-description">
+                            2002년 월드컵 개최에 따른 대기질 및 환경개선을 위한 정책으로 시작(산업부, 환경부, 기재부,
+                            국토해양부 등)
+                            <br />
+                            2007년 혼합율 0.5%로 시작하여 2010년부터 2.0% 의무혼합 후 2015년 7월 30일까지 유지(산업부
+                            고시 근거)
+                            <br />
+                            2015년 7월 31일부터 수송용 연료 의무혼합제도[RFS(Renewable Fuel Standard)] 범령 발효
+                        </p>
+                        <p className="rfs-title">*RFS(Renewable Fuel Standard) : 신재생연료 의무혼합제도</p>
+                        <p className="rfs-description">
+                            의무대상자로 하여금 자신이 공급하는 수송 연료의 일정비율을 신재생 에너지연료로 혼합하여
+                            공급토록 의무화하는 제도이다.
+                        </p>
+                        <div className="rfs-graph-section">
+                            <h4 className="rfs-graph-title">
+                                &lt; RFS 시행령의 바이오디젤 중장기 의무혼합비율(%) &gt;
+                            </h4>
+                            <img src={playGraph} alt="RFS 시행령 그래프" className="rfs-graph" />
+                            <p className="rfs-graph-description">
+                                바이오디젤 의무혼합자(정유사)를 통해 전국 모든 주유소에서 현재 BD5(경유 97% + 바이오디젤
+                                3%)가 유통, 바이오디젤이 혼합되지 아니한 경유는 가짜 경유(불법 유통 대상)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="biodiesel-effects">
+                    <h3 className="effects-title">바이오디젤 기대효과</h3>
+
+                    <div className="effects-box">
+                        <h4 className="effects-box-title">환경개선 효과</h4>
+                        <div className="effects-box-description">
+                            <ul>
+                                <li>토양 및 해상 유출 시 3주 이내 90%이상 생분해 (오염방지)</li>
+                                <li>경유 1kℓ를 바이오디젤로 대체 시, 2.59톤의 CO2 저감</li>
+                                <li>오염물질(발암성 방향족화합물) 배출 거의 없음</li>
+                                <li>황산화물 배출 전혀 없음</li>
+                                <li>
+                                    폐식용유 재활용 통한 수질 개선
+                                    <br />
+                                    [BD원료로 사용되는 폐식용유 재활용은 매년 소양강 댐 저수규모(29억톤)의 21개 이상의
+                                    수질을 개선 (우리나라 국민의 연간 소비 식수량(약 50억톤)의 12배 수준)]
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="effects-box">
+                        <h4 className="effects-box-title">국산 에너지 확보 효과</h4>
+                        <p className="effects-box-description">
+                            <ul>
+                                <li>국내 폐자원(폐식용유, 동물성 기름) 재활용 (2019년 기준 약 177천톤)</li>
+                                <li>
+                                    국내 휴경지에 유채 및 해바라기 지배를 통한 원료 공급 가능
+                                    <br /> (작물 재배를 통한 경관 활용으로 농가소득 증가 기대)
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className="effects-box">
+                        <h4 className="effects-box-title">경제적 효과</h4>
+                        <p className="effects-box-description">
+                            <ul>
+                                <li>연료 내 10% 산소 함유로 완전연소 유도</li>
+                                <li>바이오디젤 플랜트 수출 및 해외 팜 오일 농장 개발(인도네시아, 10,800ha)</li>
+                                <li>
+                                    신재생에너지 선도국인 유럽, 미국 등지로 수출 (총 수출 물량 : 약 632천kℓ, 약
+                                    6,951억원 달성)
+                                </li>
+                                <li>경유 차량의 기존 엔진 그대로 적용 가능</li>
+                                <li>
+                                    바이오디젤 보급 이후, 전국의 폐식용유 수거 체계 완벽한 구축 [신산업 및 대규모(전국
+                                    약 5,000명) 인력 창출]
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
