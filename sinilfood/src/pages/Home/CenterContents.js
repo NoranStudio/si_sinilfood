@@ -3,8 +3,10 @@ import truckImage1 from "../../assets/img/center/truck.png";
 import truckImage2 from "../../assets/img/center/network.png";
 import truckImage3 from "../../assets/img/center/product.png";
 import truckImage4 from "../../assets/img/center/good_system.png";
+import logo from "../../assets/img/center/logo.png";
 import "../../assets/styles/global.css";
 import "../../assets/styles/center.css";
+import Partners from "./Partners";
 
 function CenterContents() {
   const [activeContent, setActiveContent] = useState(0); // 현재 활성화된 콘텐츠의 인덱스 관리
@@ -39,32 +41,40 @@ function CenterContents() {
   };
 
   return (
-    <div className="center-section">
-      <div className="center-text">
-        <h2 className="center-title">
-            전국직영센터 운영
-            <span className="normal-text">으로</span>
-        </h2>
-        <h3 className="center-subtitle">{slides[activeContent].subtitle}</h3>
-        <div className="button-group">
-          {slides.map((slide, index) => (
-            <button
-              key={index}
-              className={`center-button ${
-                activeContent === index ? "active" : ""
-              }`}
-              onClick={() => handleButtonClick(index)}
-            >
-              {slide.title}
-            </button>
-          ))}
+    <div className="center-container">
+      <div className="center-section">
+        <div className="center-contents">
+          <div className="center-text">
+            <h2 className="center-title">
+              전국직영센터 운영
+              <span className="normal-text">으로</span>
+            </h2>
+            <h3 className="center-subtitle">
+              {slides[activeContent].subtitle}
+            </h3>
+            <div className="button-group">
+              {slides.map((slide, index) => (
+                <button
+                  key={index}
+                  className={`center-button ${
+                    activeContent === index ? "active" : ""
+                  }`}
+                  onClick={() => handleButtonClick(index)}
+                >
+                  {slide.title}
+                </button>
+              ))}
+            </div>
+          </div>
+          <img src={logo} alt="logo" />
         </div>
+        <img
+          src={slides[activeContent].image}
+          alt="트럭 이미지"
+          className="truck-image"
+        />
       </div>
-      <img
-        src={slides[activeContent].image}
-        alt="트럭 이미지"
-        className="truck-image"
-      />
+      <Partners />
     </div>
   );
 }
