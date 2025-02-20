@@ -1,7 +1,7 @@
 import React from 'react';
 import './BusinessNavbar.css';
 
-function BusinessNavbar({ activeTab, setActiveTab }) {
+function BusinessNavbarDesktop({ activeTab, setActiveTab }) {
     const menuItems = [
         { id: 'manufacturing', text: '전용유 제작', width: '111px' },
         { id: 'types', text: '식용유 종류', width: '111px' },
@@ -35,4 +35,4 @@ function BusinessNavbar({ activeTab, setActiveTab }) {
     );
 }
 
-export default BusinessNavbar;
+export default BusinessNavbarDesktop;
