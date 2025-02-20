@@ -1,0 +1,92 @@
+.footer-mobile {
+    background-color: #222;
+    width: 100%;
+    height: 250px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px 0;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.footer-content-mobile {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 왼쪽 영역 */
+.footer-left-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.footer-logo-mobile {
+    width: 100px;
+    height: 35.23px;
+}
+
+.footer-info-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-info-mobile .address {
+    width: 199px;
+    height: 20px;
+    color: #ffffff;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: -0.6px;
+}
+
+.footer-info-mobile .phone {
+    width: 120px;
+    height: 20px;
+    color: #ffffff;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: -0.6px;
+}
+
+.footer-info-mobile .copyright {
+    width: 218px;
+    height: 20px;
+    color: #ffffff;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: -0.6px;
+}
+
+/* 오른쪽 영역 */
+.footer-links-mobile {
+    width: 52px;
+}
+
+.footer-links-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links-mobile a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    line-height: 16px;
+}
