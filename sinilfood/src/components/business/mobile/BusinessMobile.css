@@ -945,3 +945,172 @@
 .effects-box-description-mobile li:last-child {
     margin-bottom: 0;
 }
+
+.oil-types-section-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.oil-types-title-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #000000;
+    width: 104px;
+    height: 30px;
+}
+
+.oil-type-boxes-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin-top: 29px;
+    margin-bottom: 60px;
+}
+
+.oil-type-box-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.oil-type-image-mobile {
+    width: 300px;
+    height: 112px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.oil-type-content-mobile {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.oil-type-header-mobile {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+}
+
+.oil-type-title-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.8px;
+    color: #000000;
+}
+
+.oil-type-subtitle-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.8px;
+    color: #727171;
+}
+
+.oil-type-description-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.6px;
+    color: #262626;
+    width: 300px;
+    text-align: left;
+}
+
+.manufacturers-section-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.manufacturers-title-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #000000;
+    width: 124px;
+    height: 30px;
+}
+
+.sponsors-grid-mobile {
+    display: grid;
+    grid-template-columns: repeat(4, 71.17px);
+    gap: 5.26px;
+    margin-top: 34px;
+}
+
+.sponsor-image-mobile {
+    width: 71.17px;
+    height: 29.56px;
+    object-fit: contain;
+}
+
+.logistics-section-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.logistics-title-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #000000;
+    width: 99px;
+    height: 30px;
+}
+
+.logistics-description-mobile {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logistics-description-mobile p {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.6px;
+    color: #262626;
+    width: 300px;
+    height: 54px;
+    text-align: left;
+}
+
+.logistics-map-mobile {
+    margin-top: 34px;
+    margin-bottom: 63px;
+}
+
+.logistics-map-mobile img {
+    width: 299px;
+    height: 456px;
+    object-fit: contain;
+}
+
+.logistics-description-mobile p strong {
+    font-weight: 700;
+}
