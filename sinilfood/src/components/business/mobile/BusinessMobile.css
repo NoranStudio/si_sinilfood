@@ -945,3 +945,85 @@
 .effects-box-description-mobile li:last-child {
     margin-bottom: 0;
 }
+
+.oil-types-section-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.oil-types-title-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #000000;
+    width: 104px;
+    height: 30px;
+}
+
+.oil-type-boxes-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin-top: 29px;
+    margin-bottom: 60px;
+}
+
+.oil-type-box-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.oil-type-image-mobile {
+    width: 300px;
+    height: 112px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.oil-type-content-mobile {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.oil-type-header-mobile {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+}
+
+.oil-type-title-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.8px;
+    color: #000000;
+}
+
+.oil-type-subtitle-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.8px;
+    color: #727171;
+}
+
+.oil-type-description-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.6px;
+    color: #262626;
+    width: 300px;
+    text-align: left;
+}
