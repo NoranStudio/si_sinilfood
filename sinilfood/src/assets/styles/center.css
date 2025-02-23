@@ -110,6 +110,9 @@
     font-size: 34px;
     margin: 0;
   }
+  .center-text {
+    width: 100%;
+  }
   .center-contents > img {
     display: none;
   }

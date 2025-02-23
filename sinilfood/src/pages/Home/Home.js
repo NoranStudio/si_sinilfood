@@ -16,8 +16,7 @@ import OilSection from "./OilSection";
 import CenterContents from "./CenterContents"; // CenterContents 파일 경로를 수정하세요
 
 // 프랜차이즈 슬라이더 컴포넌트 가져오기
-import FranchiseSlider from "./FranchiseSlider.js";
-import Partners from "./Partners.js";
+import Slider from "./Slider.js";
 
 function App() {
   return (
@@ -73,7 +72,6 @@ function App() {
           </a>
         </div>
       </div>
-
       {/* 페이지 내용 (예: 고객문의 페이지) */}
       <div className="page-content">
         <div>
@@ -93,18 +91,12 @@ function App() {
           </p>
         </div>
       </div>
-
       {/* 페이지 하단 콘텐츠 */}
       <OilSection />
-
-      {/* 전국직영센터 콘텐츠 */}
+      {/* 전국직영센터,파트너 */}
       <CenterContents />
-
-      {/* 협력사 및 제조사 상단 멘트 */}
-
-      {/* 프랜차이즈 물류업체 슬라이더 */}
-      <FranchiseSlider />
-
+      {/* 프랜차이즈 물류업체 */}
+      <Slider />
       {/* 주식회사 신일푸드 새소식 섹션 */}
       <div className="news-section">
         <div className="newsmain-header">
