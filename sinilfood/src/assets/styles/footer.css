@@ -1,112 +1,74 @@
-/* Footer 스타일 */
+p {
+  margin: 0;
+}
 .footer {
-    display: flex;
-    justify-content: space-between; /* 좌우 배치 */
-    background-color: #222; /* 배경색 */
-    color: #fff; /* 텍스트 색상 */
-    align-items: center; /* 세로 중앙 정렬 */
-    text-align: center;
-    padding: 0px 0;
-    width: 100%; /* 페이지 전체 폭 사용 */
-    height : 446px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 상단 그림자 */
-
-    max-width: 1920px;
-    
-    padding: 0px 0px;
-
-    margin: 0 auto;
-    margin-top: 219px;
-
+  background-color: rgba(38, 38, 38, 1);
+}
+.footer-contents {
+  width: 1370px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contents .left {
+  display: flex;
+  flex-direction: column;
+  gap: 168px;
+}
+.footer-contents .left img {
+  width: 247px;
+}
+.footer-contents .left-contents {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: -2px;
+}
+.footer-contents .left-contents > div {
+  display: flex;
+  gap: 40px;
+}
+.footer-contents .right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-contents .right a {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
 }
 
-
-.footer-content {
-    max-width: 1920px; /* 콘텐츠 최대 너비 */
-    margin: 0 auto; /* 중앙 정렬 */
-    display: flex; /* Flexbox 레이아웃 */
-    justify-content: space-between; /* 좌우 배치 */
-    align-items: flex-start; /* 세로 정렬: 위쪽 기준 */
-    padding: 0px 0;
-    gap: 20px; /* 섹션 간 간격 */
+@media screen and (max-width: 1370px) {
+  .footer-contents {
+    width: 100%;
   }
-  
-  .footer-logo {
-    width: 247px;
-    height: 87px;
-    flex-shrink: 0;
-    margin-left: 273px;
-    margin-right: 1400px;
+  .footer-contents {
+    flex-direction: column;
+    gap: 20px;
   }
-  
-  .footer-info {
-
-
-    flex: 1; /* 가변 너비 */
-    text-align: left; /* 왼쪽 정렬 */
-
-    color: #FFF;
-
-    font-family: "Apple SD Gothic Neo";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -1.2px;
-    line-height: 1.6; /* 줄 간격 */
-
-    margin-left: 275px;
+  .footer-contents .left {
+    gap: 120px;
   }
-  .footer-info p {
-    color: #FFF;
-    font-family: "Apple SD Gothic Neo";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 40px; /* 166.667% */
-    letter-spacing: -1.2px;
-    line-height: 1.6; /* 줄 간격 */
+  .footer-contents .left-contents > div {
+    flex-direction: column;
+    gap: 0;
   }
-
-  .footer-links {
-
-    margin-left: 1509px;
-    margin-right: 277px;
-    margin-top: -110px;
-
-    align-items: right; /* 세로 중앙 정렬 */
-    text-align: right; /* 오른쪽 정렬 */
-    width: 120px; /* 전체 너비 사용 */
-    color: #FFF;
+  .footer-contents .left img {
+    width: 200px;
   }
-  
-  .footer-links ul {
-    
-    font-family: "Apple SD Gothic Neo";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* 세로 정렬 */
-    gap: 20px; /* 링크 간 간격 */
+  .footer-contents .left-contents {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0;
   }
-  
-  .footer-links ul li a {
-    color: #fff; /* 링크 색상 */
-    color: #FFF;
-    font-family: "Apple SD Gothic Neo";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 40px; /* 166.667% */
-    letter-spacing: -1.2px;
-    line-height: 1.6; /* 줄 간격 */
+  .footer-contents .right {
+    gap: 20px;
   }
-  
-  .footer-links ul li a:hover {
-    text-decoration: underline; /* 호버 시 밑줄 */
+  .footer-contents .right a {
+    font-size: 16px;
+    text-align: left;
   }
-  
+}
