@@ -24,27 +24,37 @@
   border-radius: 20px; /* 모서리 둥글게 */
   overflow: hidden; /* 경계선 넘는 부분 숨김 */
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  width: 1109px;
+  /* height: 510px; */
+  aspect-ratio: 1 / 0.46;
 }
 
 .oil-item:nth-child(2) {
-  flex: 1; /* 오른쪽 이미지는 더 작은 비율 */
+  flex: 1;
+  width: 245px;
+  aspect-ratio: 1 / 0.5;
 }
 
 .image-wrapper {
-  position: relative;
-  width: fit-content;
+  /* position: relative; */
+  /* width: fit-content; */
 }
 
 .oil-image {
-  width: 1109px;
-  height: 510px;
-  flex-shrink: 0;
+  /* width: 1109px; */
+  /* height: 510px; */
+  /* flex-shrink: 0; */
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
 }
 
 .oil-next-image {
-  width: 245px;
-  height: 510px;
-  flex-shrink: 0;
+  /* width: 245px; */
+  /* height: 510px; */
+  /* flex-shrink: 0; */
+  width: 110%;
+  height: 110%;
 }
 
 .overlay-image {
