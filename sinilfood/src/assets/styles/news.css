@@ -1,0 +1,107 @@
+p {
+  margin: 0;
+}
+.new-news-section {
+  padding: 180px 0;
+  background-color: rgba(245, 245, 245, 1);
+}
+.new-news-section > .wrapper {
+  width: 1370px;
+  margin: 0 auto;
+}
+.new-news-section .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 68px;
+}
+.new-news-section .header .title {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0;
+}
+.new-news-section .header .title b {
+  font-weight: 700;
+}
+.new-news-section .header .navigation {
+  display: flex;
+}
+.new-news-section .header .navigation img {
+  cursor: pointer;
+}
+.new-news-section .swiper-wrapper {
+  padding: 10px;
+}
+.new-news-item {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: left;
+}
+.new-news-notice {
+  color: rgba(73, 153, 83, 1);
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 8px;
+  letter-spacing: -2px;
+}
+.new-news-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 33px;
+  letter-spacing: -2px;
+  width: 100%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.new-news-description {
+  color: rgba(38, 38, 38, 1);
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 133px;
+  letter-spacing: -2px;
+  width: 100%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.new-news-date {
+  color: rgba(114, 113, 113, 1);
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -2px;
+}
+@media screen and (max-width: 1370px) {
+  .new-news-section > .wrapper {
+    width: 100%;
+  }
+  .new-news-section .header .title {
+    font-size: 34px;
+    text-align: left;
+  }
+  .new-news-item {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .new-news-notice {
+    font-size: 20px;
+  }
+  .new-news-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  .new-news-description {
+    font-size: 20px;
+  }
+  .new-news-date {
+    font-size: 16px;
+  }
+}

@@ -5,9 +5,6 @@ import logo from "../../assets/img/sinil_logo.png";
 import shinliFoodImage from "../../assets/img/SHINLI FOOD white.png"; // SHINLI FOOD 이미지
 import phoneIcon from "../../assets/img/phone.png";
 import headsetIcon from "../../assets/img/headset.png";
-//협력사 로고 이미지
-import leftbutton from "../../assets/img/left_button.png";
-import rightbutton from "../../assets/img/right_button.png";
 
 import counsel_image from "../../assets/img/counsel_image.png"; // 상담 이미지
 
@@ -17,6 +14,7 @@ import CenterContents from "./CenterContents"; // CenterContents 파일 경로�
 
 // 프랜차이즈 슬라이더 컴포넌트 가져오기
 import Slider from "./Slider.js";
+import News from "./News.js";
 
 function App() {
   return (
@@ -95,64 +93,10 @@ function App() {
       <OilSection />
       {/* 전국직영센터,파트너 */}
       <CenterContents />
-      {/* 프랜차이즈 물류업체 */}
+      {/* 프랜차이즈 */}
       <Slider />
-      {/* 주식회사 신일푸드 새소식 섹션 */}
-      <div className="news-section">
-        <div className="newsmain-header">
-          <h3 className="newsmain-title">
-            <span>주식회사 신일푸드</span>
-            <span>새소식</span>
-          </h3>
-          <div className="news-navigation">
-            <button className="arrow-box left-arrow">
-              <img src={leftbutton} alt="왼쪽 화살표" className="arrow-img" />
-            </button>
-            <button className="arrow-box right-arrow">
-              <img
-                src={rightbutton}
-                alt="오른쪽 화살표"
-                className="arrow-img"
-              />
-            </button>
-          </div>
-        </div>
-        <div className="news-grid">
-          <div className="news-item">
-            <h4 className="news-notice">NOTICE</h4>
-            <h3 className="news-title">
-              프랜차이즈산업협회, 2024 제2회 상생파...
-            </h3>
-            <p className="news-description">
-              [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-              상생파트너스위원회)]한...
-            </p>
-            <span className="news-date">2024. 10. 21</span>
-          </div>
-          <div className="news-item">
-            <h4 className="news-notice">NOTICE</h4>
-            <h3 className="news-title">
-              프랜차이즈산업협회, 2024 제2회 상생파...
-            </h3>
-            <p className="news-description">
-              [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-              상생파트너스위원회)]한...
-            </p>
-            <span className="news-date">2024. 10. 21</span>
-          </div>
-          <div className="news-item">
-            <h4 className="news-notice">NOTICE</h4>
-            <h3 className="news-title">
-              프랜차이즈산업협회, 2024 제2회 상생파...
-            </h3>
-            <p className="news-description">
-              [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-              상생파트너스위원회)]한...
-            </p>
-            <span className="news-date">2024. 10. 21</span>
-          </div>
-        </div>
-      </div>
+      {/* 뉴스 */}
+      <News />
 
       {/* 상담센터 섹션 */}
       <div className="counsel-center">

@@ -9,17 +9,17 @@
   margin: 0 auto;
   margin-bottom: 60px;
 }
-.swiper-wrapper {
+.slider-section .swiper-wrapper {
   padding: 20px;
 }
-.swiper-slide {
+.slider-section .swiper-slide {
   width: 325px !important;
   height: 135px !important;
   border-radius: 15px;
   cursor: grab;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.swiper-slide img {
+.slider-section .swiper-slide img {
   height: 100%;
 }
 @media screen and (max-width: 1370px) {
@@ -29,7 +29,7 @@
   .slider-section h3 {
     font-size: 34px;
   }
-  .swiper-wrapper {
+  .slider-section .swiper-wrapper {
     padding: 10px;
   }
 }
