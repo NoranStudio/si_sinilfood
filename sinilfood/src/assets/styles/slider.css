@@ -1,0 +1,35 @@
+.slider-section {
+  padding: 180px 0;
+}
+.slider-section h3 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+  width: 1370px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.swiper-wrapper {
+  padding: 20px;
+}
+.swiper-slide {
+  width: 325px !important;
+  height: 135px !important;
+  border-radius: 15px;
+  cursor: grab;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.swiper-slide img {
+  height: 100%;
+}
+@media screen and (max-width: 1370px) {
+  .slider-section {
+    padding: 10% 0;
+  }
+  .slider-section h3 {
+    font-size: 34px;
+  }
+  .swiper-wrapper {
+    padding: 10px;
+  }
+}
