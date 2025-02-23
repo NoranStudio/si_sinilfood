@@ -4,7 +4,7 @@ import logo from "../assets/img/sinil_logo.png"; // 로고 이미지 경로 수�
 
 function Footer() {
   return (
-    <footer class="footer">
+    <footer className="footer">
       <div className="footer-contents">
         <div className="left">
           <img src={logo} alt="신일푸드 로고" className="footer-logo" />

@@ -65,6 +65,9 @@
     width: 100%;
     flex-direction: column;
   }
+  .cs-contents {
+    padding: 0 20px;
+  }
   .cs-contents h2 {
     text-align: left;
     font-size: 34px;
@@ -80,6 +83,7 @@
     font-size: 48px;
   }
   .cs-image {
-    width: 100%;
+    width: calc(100% - 40px);
+    padding: 0 20px;
   }
 }

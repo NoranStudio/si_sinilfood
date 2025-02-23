@@ -1,0 +1,43 @@
+import React, { useState } from "react";
+import logo from "../assets/img/sinil_logo.png";
+import "../assets/styles/header.css";
+
+const Header = () => {
+  const [active, setActive] = useState(1);
+  const menus = [
+    { id: 1, name: "회사소개", url: "#none" },
+    { id: 2, name: "사업소개", url: "#none" },
+    { id: 3, name: "제품소개", url: "#none" },
+    { id: 4, name: "고객서비스", url: "#none" },
+  ];
+
+  const onClickMenu = (id) => {
+    setActive(id);
+  };
+
+  return (
+    <header>
+      <div className="header-contents">
+        <h1>
+          <a href="/">
+            <img src={logo} alt="Sinilfood Logo" />
+          </a>
+        </h1>
+        <nav>
+          {menus.map((menu) => (
+            <h2 key={menu.id} onClick={() => onClickMenu(menu.id)}>
+              <a
+                href={menu.url}
+                className={`${menu.id === active && "active"}`}
+              >
+                {menu.name}
+              </a>
+            </h2>
+          ))}
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

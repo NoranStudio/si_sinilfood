@@ -101,7 +101,8 @@
 
 @media screen and (max-width: 1370px) {
   .center-contents {
-    width: 100%;
+    width: calc(100% - 40px);
+    padding: 0 20px;
   }
   .center-title {
     font-size: 34px;
@@ -129,5 +130,9 @@
   .truck-image {
     width: 100%;
     height: auto;
+  }
+  h2,
+  h3 {
+    width: 100%;
   }
 }

@@ -1,75 +1,20 @@
 import React from "react";
 import "../../assets/styles/global.css";
-import logo from "../../assets/img/sinil_logo.png";
-//import logo_big from '../../assets/img/logo_big2.png'; // 로고 이미지
-import shinliFoodImage from "../../assets/img/SHINLI FOOD white.png"; // SHINLI FOOD 이미지
-import phoneIcon from "../../assets/img/phone.png";
-import headsetIcon from "../../assets/img/headset.png";
 
-import Footer from "../../components/Footer"; //footer
-import OilSection from "./OilSection";
-import CenterContents from "./CenterContents"; // CenterContents 파일 경로를 수정하세요
-
-// 프랜차이즈 슬라이더 컴포넌트 가져오기
-import Slider from "./Slider.js";
-import News from "./News.js";
-import CS from "./CS.js";
+import Header from "../../components/Header.js"; // 헤더
+import MainBanner from "./MainBanner.js"; // 메인배너
+import OilSection from "./OilSection"; // 오일섹션
+import CenterContents from "./CenterContents"; // 전국센터, 파트너
+import Slider from "./Slider.js"; // 프렌차이즈
+import News from "./News.js"; // 새소식
+import CS from "./CS.js"; // 고객센터
+import Footer from "../../components/Footer"; // 푸터
 
 function App() {
   return (
     <div className="App">
-      {/* 상단 배너 */}
-      <div className="banner">
-        <div className="logo">
-          <img src={logo} alt="Sinilfood Logo" />
-        </div>
-
-        {/* 네비게이션 바 */}
-        <nav className="navbar">
-          <ul>
-            <li className="nav-item company">
-              <a href="#about">회사소개</a>
-            </li>
-            <li className="nav-item business">
-              <a href="#business">사업영역</a>
-            </li>
-            <li className="nav-item product">
-              <a href="#products">제품소개</a>
-            </li>
-            <li className="nav-item service">
-              <a href="#services">고객서비스</a>
-            </li>
-          </ul>
-        </nav>
-
-        {/* SHINLI FOOD 이미지 */}
-        <img
-          src={shinliFoodImage}
-          alt="SHINLI FOOD"
-          className="shinli-food-img"
-        />
-
-        {/* 배너 텍스트 배치 */}
-        <h1 className="title-large">식용유 및 식품 유통</h1>
-        <h1 className="title-large">
-          전문기업 <span className="highlight">신일푸드</span>
-        </h1>
-        <p className="description">
-          <strong>신일푸드</strong> 만의 독자적인 전용 물류 시스템으로 전국적
-          유통 체인망이 구축되어 있습니다.
-        </p>
-
-        {/* 우측 사이드 버튼 */}
-        <div className="side-buttons">
-          <a href="#contact" className="contact-button">
-            <img src={phoneIcon} alt="Phone Icon" className="icon-image" />
-          </a>
-          <a href="#contact" className="contact-button">
-            <img src={headsetIcon} alt="Headset Icon" className="icon-image" />
-          </a>
-        </div>
-      </div>
-      {/* 페이지 내용 (예: 고객문의 페이지) */}
+      <Header />
+      <MainBanner />
       <div className="page-content">
         <div>
           <h2 className="page-title">
@@ -88,17 +33,11 @@ function App() {
           </p>
         </div>
       </div>
-      {/* 페이지 하단 콘텐츠 */}
       <OilSection />
-      {/* 전국직영센터,파트너 */}
       <CenterContents />
-      {/* 프랜차이즈 */}
       <Slider />
-      {/* 뉴스 */}
       <News />
-      {/* 상담센터 섹션 */}
       <CS />
-      {/* Footer */}
       <Footer />
     </div>
   );
