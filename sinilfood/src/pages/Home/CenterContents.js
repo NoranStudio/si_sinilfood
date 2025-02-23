@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+
+import Partners from "./Partners"; // 파트너섹션
+
 import truckImage1 from "../../assets/img/center/truck.png";
 import truckImage2 from "../../assets/img/center/network.png";
 import truckImage3 from "../../assets/img/center/product.png";
 import truckImage4 from "../../assets/img/center/good_system.png";
 import logo from "../../assets/img/center/logo.png";
+
 import "../../assets/styles/global.css";
 import "../../assets/styles/center.css";
-import Partners from "./Partners";
 
 function CenterContents() {
   const [activeContent, setActiveContent] = useState(0); // 현재 활성화된 콘텐츠의 인덱스 관리

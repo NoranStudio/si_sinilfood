@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "../../assets/styles/slogan.css";
+
 import sloganMainBanner1 from "../../assets/img/slogan-main1.png";
 import sloganMainBanner2 from "../../assets/img/slogan-main2.png";
 import sloganSubBanner1 from "../../assets/img/slogan-sub1.png";
@@ -9,8 +11,8 @@ import sloganSubBanner2 from "../../assets/img/slogan-sub2.png";
 import Arrow from "../../assets/img/slogan-arrow.png";
 
 const Slogan = () => {
-  const swiper1Ref = useRef(null); // 첫 번째 Swiper
-  const swiper2Ref = useRef(null); // 두 번째 Swiper
+  const swiper1Ref = useRef(null); // 첫 번째 Swiper : 메인
+  const swiper2Ref = useRef(null); // 두 번째 Swiper : 서브
 
   const handleNext = () => {
     swiper1Ref.current?.slideNext();

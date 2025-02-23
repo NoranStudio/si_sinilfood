@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import leftbutton from "../../assets/img/left_button.png";
 import rightbutton from "../../assets/img/right_button.png";
+
 import "../../assets/styles/news.css";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 const News = () => {
   const swiperRef = useRef(null);

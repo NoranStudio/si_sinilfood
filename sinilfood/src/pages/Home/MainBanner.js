@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import shinliFoodImage from "../../assets/img/SHINLI FOOD white.png"; // SHINLI FOOD 이미지
 import phoneIcon from "../../assets/img/phone.png";
 import headsetIcon from "../../assets/img/headset.png";
@@ -6,9 +8,10 @@ import bannerImg1 from "../../assets/img/mainbanner1.png";
 import bannerImg2 from "../../assets/img/mainbanner2.png";
 import bannerImg3 from "../../assets/img/mainbanner3.png";
 import scrollDown from "../../assets/img/scroll-down.png";
-import "../../assets/styles/mainbanner.css";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
+import "../../assets/styles/mainbanner.css";
+
 import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
