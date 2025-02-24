@@ -15,7 +15,6 @@
   background-color: #ffffff;
   border-bottom-left-radius: 60px; /* 모서리 둥글게 */
   border-bottom-right-radius: 60px; /* 모서리 둥글게 */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
   background-color: #fbfbfb;
   padding-bottom: 108px;
 }
