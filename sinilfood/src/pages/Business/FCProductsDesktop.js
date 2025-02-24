@@ -9,9 +9,14 @@ import OilTypes from '../../components/business/OilTypes';
 import RenewableEnergy from '../../components/business/RenewableEnergy';
 import Manufacturers from '../../components/business/Manufacturers';
 import Logistics from '../../components/business/Logistics';
+import businessBanner from '../../assets/img/business/business_banner.png';
+import businessBannerLogistics from '../../assets/img/business/business_banner_logistics.png';
 
 function FCProductsDesktop() {
     const [activeTab, setActiveTab] = useState('manufacturing');
+
+    // 배너 이미지 선택 로직
+    const bannerImage = activeTab === 'logistics' ? businessBannerLogistics : businessBanner;
 
     const renderContent = () => {
         switch (activeTab) {
@@ -32,7 +37,7 @@ function FCProductsDesktop() {
 
     return (
         <div className="business-wrapper">
-            <div className="business-banner">
+            <div className="business-banner" style={{ backgroundImage: `url(${bannerImage})` }}>
                 <div className="business-container">
                     <DesktopNavbar />
                     <div className="business-content">

@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import './FCProductsMobile.css';
-import BusinessNavbarMobile from '../../../components/business/mobile/BusinessNavbarMobile';
 import NavbarMobile from '../../../components/mobile/NavbarMobile';
-
-// 모바일 버전 컴포넌트들
+import BusinessNavbarMobile from '../../../components/business/mobile/BusinessNavbarMobile';
 import ManufacturingMobile from '../../../components/business/mobile/ManufacturingMobile';
 import OilTypesMobile from '../../../components/business/mobile/OilTypesMobile';
 import RenewableEnergyMobile from '../../../components/business/mobile/RenewableEnergyMobile';
 import ManufacturersMobile from '../../../components/business/mobile/ManufacturersMobile';
 import LogisticsMobile from '../../../components/business/mobile/LogisticsMobile';
+import businessBannerMobile from '../../../assets/img/business/mobile/business_banner_mobile.png';
+import businessBannerLogisticsMobile from '../../../assets/img/business/mobile/business_banner_logistics_mobile.png';
 
 function FCProductsMobile() {
     const [activeTab, setActiveTab] = useState('manufacturing');
+
+    // 배너 이미지 선택 로직
+    const bannerImage = activeTab === 'logistics' ? businessBannerLogisticsMobile : businessBannerMobile;
 
     const renderContent = () => {
         switch (activeTab) {
@@ -32,7 +35,7 @@ function FCProductsMobile() {
 
     return (
         <div className="business-wrapper-mobile">
-            <div className="business-banner-mobile">
+            <div className="business-banner-mobile" style={{ backgroundImage: `url(${bannerImage})` }}>
                 <div className="banner-top-mobile">
                     <NavbarMobile />
                 </div>
