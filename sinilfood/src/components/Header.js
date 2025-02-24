@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import logo from "../assets/img/sinil_logo.png";
+import navWhite from "../assets/img/nav_white.png";
 import "../assets/styles/header.css";
 
-const Header = () => {
+const Header = ({ isOpen }) => {
   const [active, setActive] = useState(1);
   const menus = [
     { id: 1, name: "회사소개", url: "#none" },
@@ -23,7 +24,7 @@ const Header = () => {
             <img src={logo} alt="Sinilfood Logo" />
           </a>
         </h1>
-        <nav>
+        <nav className="nav-pc">
           {menus.map((menu) => (
             <h2 key={menu.id} onClick={() => onClickMenu(menu.id)}>
               <a
@@ -35,6 +36,7 @@ const Header = () => {
             </h2>
           ))}
         </nav>
+        <img src={navWhite} alt="nav" className="nav-mo" onClick={isOpen} />
       </div>
     </header>
   );

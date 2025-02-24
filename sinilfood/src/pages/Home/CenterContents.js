@@ -71,11 +71,13 @@ function CenterContents() {
           </div>
           <img src={logo} alt="logo" />
         </div>
-        <img
-          src={slides[activeContent].image}
-          alt="트럭 이미지"
-          className="truck-image"
-        />
+        <div className="truck-image-container">
+          <img
+            src={slides[activeContent].image}
+            alt="트럭 이미지"
+            className="truck-image"
+          />
+        </div>
       </div>
       <Partners />
     </div>

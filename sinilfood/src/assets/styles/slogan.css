@@ -76,21 +76,28 @@
   transform: translateY(-50%);
   right: 23%;
 }
+.mo-br,
+.slogan-contents-wrapper-mo {
+  display: none;
+}
 
 @media screen and (max-width: 1370px) {
   .slogan-section {
-    width: calc(100% - 40px);
+    width: calc(100% - 60px);
+    padding: 80px 0;
   }
   .slogan-title {
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1.4;
+    margin-bottom: 14px;
   }
   .slogan-description {
-    font-size: 20px;
+    font-size: 12px;
     line-height: 1.4;
+    margin-bottom: 32px;
   }
   .slogan-banner-title {
-    font-size: 34px;
+    font-size: 30px;
     margin-bottom: 12px;
   }
   .slogan-banner-description {
@@ -100,11 +107,60 @@
   .slogan-subbanner {
     display: none;
   }
+  .slogan-contents-wrapper {
+    display: none;
+  }
   .slogan-contents-wrapper .swiper-slide .slogan-banner-contents .textbox {
     margin: 0;
     padding: 0 20px;
   }
   .sloganbanner-navigation {
     right: 5%;
+  }
+  .mo-br {
+    display: block;
+  }
+  .slogan-contents-wrapper-mo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .slogan-contents-wrapper-mo .contents {
+    border-radius: 20px;
+    width: 100%;
+    aspect-ratio: 1 / 0.73;
+    overflow: hidden;
+    position: relative;
+  }
+  .slogan-contents-wrapper-mo .contents img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .slogan-contents-wrapper-mo .contents .contents-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+  }
+  .slogan-contents-wrapper-mo .contents .contents-text .title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .slogan-contents-wrapper-mo
+    .contents
+    .contents-text
+    .slogan-contents-mo-description {
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 20px;
   }
 }

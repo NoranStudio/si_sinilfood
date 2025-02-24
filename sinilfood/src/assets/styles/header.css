@@ -28,15 +28,27 @@ nav > h2 > a {
 nav > h2 > a.active {
   font-weight: bold;
 }
+.nav-mo {
+  display: none;
+}
 
 @media screen and (max-width: 1370px) {
   .header-contents {
-    width: 100%;
+    width: calc(100% - 60px);
+    padding: 30px;
   }
-  nav {
-    gap: 12px;
+  .header-contents h1 {
+    margin: 0;
   }
-  nav > h2 > a {
-    font-size: 18px;
+  .header-contents h1 img {
+    width: 100px;
+  }
+  .nav-pc {
+    display: none;
+  }
+  .nav-mo {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
   }
 }

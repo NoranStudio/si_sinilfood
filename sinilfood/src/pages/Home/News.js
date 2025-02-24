@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import leftbutton from "../../assets/img/left_button.png";
@@ -7,7 +7,19 @@ import rightbutton from "../../assets/img/right_button.png";
 import "../../assets/styles/news.css";
 
 const News = () => {
+  const [isMobile, setIsMobile] = useState(false);
   const swiperRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // 초기 실행
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="new-news-section">
       <div className="wrapper">
@@ -31,119 +43,183 @@ const News = () => {
             />
           </div>
         </div>
-        <Swiper
-          breakpoints={{
-            768: { spaceBetween: 34, slidesPerView: 3 },
-            480: { spaceBetween: 20, slidesPerView: 2 },
-            0: { spaceBetween: 20, slidesPerView: 1.3 },
-          }}
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
-        >
-          <SwiperSlide>
-            <div className="new-news-item">
-              <p className="new-news-notice">NOTICE</p>
-              <p className="new-news-title">
-                프랜차이즈산업협회프랜차이즈산업협회프랜차이즈산업협회프랜차이즈산업협회
-              </p>
-              <p className="new-news-description">
-                [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-                상생파트너스위원회너스위원회)]너스위스위원스위원스위원
-              </p>
-              <span className="new-news-date">2024. 10. 21</span>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="new-news-item">
-              <p className="new-news-notice">NOTICE</p>
-              <p className="new-news-title">
-                프랜차이즈산업협회, 2024 제2회 상생파...
-              </p>
-              <p className="new-news-description">
-                [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-                상생파트너스위원회)]한...
-              </p>
-              <span className="new-news-date">2024. 10. 21</span>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="new-news-item">
-              <p className="new-news-notice">NOTICE</p>
-              <p className="new-news-title">
-                프랜차이즈산업협회, 2024 제2회 상생파...
-              </p>
-              <p className="new-news-description">
-                [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-                상생파트너스위원회)]한...
-              </p>
-              <span className="new-news-date">2024. 10. 21</span>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="new-news-item">
-              <p className="new-news-notice">NOTICE</p>
-              <p className="new-news-title">
-                프랜차이즈산업협회, 2024 제2회 상생파...
-              </p>
-              <p className="new-news-description">
-                [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-                상생파트너스위원회)]한...
-              </p>
-              <span className="new-news-date">2024. 10. 21</span>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="new-news-item">
-              <p className="new-news-notice">NOTICE</p>
-              <p className="new-news-title">
-                프랜차이즈산업협회, 2024 제2회 상생파...
-              </p>
-              <p className="new-news-description">
-                [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-                상생파트너스위원회)]한...
-              </p>
-              <span className="new-news-date">2024. 10. 21</span>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="new-news-item">
-              <p className="new-news-notice">NOTICE</p>
-              <p className="new-news-title">
-                프랜차이즈산업협회, 2024 제2회 상생파...
-              </p>
-              <p className="new-news-description">
-                [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-                상생파트너스위원회)]한...
-              </p>
-              <span className="new-news-date">2024. 10. 21</span>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="new-news-item">
-              <p className="new-news-notice">NOTICE</p>
-              <p className="new-news-title">
-                프랜차이즈산업협회, 2024 제2회 상생파...
-              </p>
-              <p className="new-news-description">
-                [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-                상생파트너스위원회)]한...
-              </p>
-              <span className="new-news-date">2024. 10. 21</span>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="new-news-item">
-              <p className="new-news-notice">NOTICE</p>
-              <p className="new-news-title">
-                프랜차이즈산업협회, 2024 제2회 상생파...
-              </p>
-              <p className="new-news-description">
-                [2024 제2회 파트너스데이 행사 모습 (제공=KFA
-                상생파트너스위원회)]한...
-              </p>
-              <span className="new-news-date">2024. 10. 21</span>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+        {!isMobile && (
+          <Swiper
+            breakpoints={{
+              768: { spaceBetween: 34, slidesPerView: 3 },
+              480: { spaceBetween: 20, slidesPerView: 3 },
+              0: { spaceBetween: 20, slidesPerView: 3 },
+            }}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+          >
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회프랜차이즈산업협회프랜차이즈산업협회프랜차이즈산업협회
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회너스위원회)]너스위스위원스위원스위원
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        )}
+        {isMobile && (
+          <Swiper
+            direction="vertical"
+            spaceBetween={20}
+            slidesPerView={3}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            className="news-slider-mo"
+          >
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="new-news-item">
+                <p className="new-news-notice">NOTICE</p>
+                <p className="new-news-title">
+                  프랜차이즈산업협회, 2024 제2회 상생파...
+                </p>
+                <p className="new-news-description">
+                  [2024 제2회 파트너스데이 행사 모습 (제공=KFA
+                  상생파트너스위원회)]한...
+                </p>
+                <span className="new-news-date">2024. 10. 21</span>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        )}
       </div>
     </div>
   );

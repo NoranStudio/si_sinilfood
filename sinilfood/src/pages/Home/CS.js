@@ -8,12 +8,16 @@ const CS = () => {
     <div className="cs-section">
       <div className="cs-contents">
         <h2>
-          협력사 사업문의 <b>상담센터</b>
+          협력사 사업문의 <br className="mo-br" />
+          <b>상담센터</b>
         </h2>
         <p className="cs-description">
           신일푸드는 함께 성장할 파트너사들을 기다립니다. <br />
           식용유 구매와 제조관련 상담문의를 남겨주세요.
         </p>
+        <div className="cs-image-mo">
+          <img src={counsel_image} alt="상담 이미지" />
+        </div>
         <button className="cs-button">
           온라인 상담문의
           <svg

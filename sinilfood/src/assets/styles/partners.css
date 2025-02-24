@@ -33,22 +33,24 @@
 @media screen and (max-width: 1370px) {
   .new-partners-header {
     top: -5%;
+    padding: 210px 0 51px;
   }
   .new-partners-header .contents {
-    padding: 0 20px;
+    padding: 0 30px;
   }
   .new-partners-header h2 {
-    font-size: 34px;
-    margin-bottom: 120px;
+    font-size: 26px;
+    margin-bottom: 51px;
   }
   .new-partners-header h3 {
-    font-size: 34px;
+    font-size: 16px;
+    text-align: center;
     width: 100%;
+    margin-bottom: 14px;
   }
   .new-partners-grid {
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 4px;
   }
   .partner-item {
     width: 100%;
@@ -65,6 +67,6 @@
 
 @media screen and (max-width: 768px) {
   .new-partners-header {
-    top: -12%;
+    top: -19%;
   }
 }

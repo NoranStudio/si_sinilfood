@@ -42,33 +42,36 @@ p {
 }
 
 @media screen and (max-width: 1370px) {
+  .footer {
+    padding: 30px;
+  }
   .footer-contents {
     width: 100%;
   }
   .footer-contents {
-    flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
   }
   .footer-contents .left {
-    gap: 120px;
+    gap: 104px;
   }
   .footer-contents .left-contents > div {
     flex-direction: column;
     gap: 0;
   }
   .footer-contents .left img {
-    width: 200px;
+    width: 100px;
   }
   .footer-contents .left-contents {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.4;
     letter-spacing: 0;
   }
   .footer-contents .right {
-    gap: 20px;
+    gap: 14px;
   }
   .footer-contents .right a {
-    font-size: 16px;
-    text-align: left;
+    font-size: 12px;
+    text-align: right;
+    white-space: nowrap;
   }
 }

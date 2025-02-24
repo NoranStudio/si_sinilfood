@@ -7,6 +7,9 @@ import headsetIcon from "../../assets/img/headset.png";
 import bannerImg1 from "../../assets/img/mainbanner1.png";
 import bannerImg2 from "../../assets/img/mainbanner2.png";
 import bannerImg3 from "../../assets/img/mainbanner3.png";
+import bannerImg1Mo from "../../assets/img/mainbanner1-mo.png";
+import bannerImg2Mo from "../../assets/img/mainbanner2-mo.png";
+import bannerImg3Mo from "../../assets/img/mainbanner3-mo.png";
 import scrollDown from "../../assets/img/scroll-down.png";
 
 import "swiper/css";
@@ -33,6 +36,11 @@ const MainBanner = () => {
         >
           <SwiperSlide>
             <img src={bannerImg1} alt="배너이미지" className="banner-img" />
+            <img
+              src={bannerImg1Mo}
+              alt="배너이미지"
+              className="banner-img-mo"
+            />
             <div className="banner-texts">
               <img src={shinliFoodImage} alt="신일푸드" />
               <p className="banner-title">
@@ -47,6 +55,11 @@ const MainBanner = () => {
           </SwiperSlide>
           <SwiperSlide>
             <img src={bannerImg2} alt="배너이미지" className="banner-img" />
+            <img
+              src={bannerImg2Mo}
+              alt="배너이미지"
+              className="banner-img-mo"
+            />
             <div className="banner-texts">
               <img src={shinliFoodImage} alt="신일푸드" />
               <p className="banner-title">
@@ -61,6 +74,11 @@ const MainBanner = () => {
           </SwiperSlide>
           <SwiperSlide>
             <img src={bannerImg3} alt="배너이미지" className="banner-img" />
+            <img
+              src={bannerImg3Mo}
+              alt="배너이미지"
+              className="banner-img-mo"
+            />
             <div className="banner-texts">
               <img src={shinliFoodImage} alt="신일푸드" />
               <p className="banner-title">

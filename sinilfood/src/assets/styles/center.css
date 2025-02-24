@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column; /* 요소들을 세로로 정렬 */
   align-items: flex-start;
-  max-width: 1920px; /* 제한된 너비 설정 */
+  /* max-width: 1920px; */
   margin: 0px auto; /* 중앙 정렬 및 위쪽 여백 */
   background-color: #ffffff;
   border-bottom-left-radius: 60px; /* 모서리 둥글게 */
@@ -90,26 +90,32 @@
   background-color: #333; /* 호버 시 검은 배경색 */
   color: #fff; /* 호버 시 흰색 글씨 */
 }
-
-.truck-image {
+.truck-image-container {
   width: 1370px;
-  height: 510px;
   margin: 0 auto;
-  border-radius: 30px 0px 0px 0px;
-  opacity: 0px;
+}
+.truck-image {
 }
 
 @media screen and (max-width: 1370px) {
+  .center-container {
+    height: 1800px;
+  }
+  .center-section {
+    padding-top: 80px;
+  }
   .center-contents {
     width: calc(100% - 40px);
-    padding: 0 20px;
+    padding: 0 30px;
+    margin: 0 auto 24px;
   }
   .center-title {
-    font-size: 34px;
+    font-size: 26px;
   }
   .center-subtitle {
-    font-size: 34px;
+    font-size: 26px;
     margin: 0;
+    line-height: 1.4;
   }
   .center-text {
     width: 100%;
@@ -118,21 +124,34 @@
     display: none;
   }
   .button-group {
-    flex-direction: column;
-    gap: 12px;
+    gap: 8px;
+    flex-wrap: wrap;
   }
   .center-button {
-    font-size: 20px;
+    font-size: 16px;
   }
   .center-button.active {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .truck-image-container {
+    margin: 0 30px;
+    width: calc(100% - 60px);
+    aspect-ratio: 1 / 0.92;
+    border-radius: 20px;
+    overflow: hidden;
   }
   .truck-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
   h2,
   h3 {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .center-container {
+    height: 1430px;
   }
 }

@@ -12,7 +12,14 @@ const Slider = () => {
   return (
     <div className="slider-section">
       <h3>프랜차이즈 물류업체</h3>
-      <Swiper spaceBetween={24} slidesPerView="auto">
+      <Swiper
+        breakpoints={{
+          768: { spaceBetween: 24 },
+          480: { spaceBetween: 5 },
+          0: { spaceBetween: 5 },
+        }}
+        slidesPerView="auto"
+      >
         <SwiperSlide>
           <img src={franchise1Logo} alt="프랜차이즈 1" />
         </SwiperSlide>
