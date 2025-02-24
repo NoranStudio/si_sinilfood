@@ -24,7 +24,7 @@ const Partners = () => {
         />
         <h2>
           주식회사 신일푸드는 <br />
-          상생경영을 통해 더 큰 가치를 만들어갑니다.
+          상생경영을 통해 <br className="mo-br" />더 큰 가치를 만들어갑니다.
         </h2>
         <h3>협력사 및 제조사</h3>
         <div className="new-partners-grid">

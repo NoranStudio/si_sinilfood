@@ -38,6 +38,9 @@
   .new-partners-header .contents {
     padding: 0 30px;
   }
+  .new-partners-header .contents img {
+    width: 70px;
+  }
   .new-partners-header h2 {
     font-size: 26px;
     margin-bottom: 51px;
@@ -67,6 +70,16 @@
 
 @media screen and (max-width: 768px) {
   .new-partners-header {
-    top: -19%;
+    top: -15%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .new-partners-header {
+    top: -25%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .new-partners-header {
+    top: -32%;
   }
 }

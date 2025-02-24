@@ -104,7 +104,7 @@
     padding-top: 80px;
   }
   .center-contents {
-    width: calc(100% - 40px);
+    width: calc(100% - 60px);
     padding: 0 30px;
     margin: 0 auto 24px;
   }
@@ -151,6 +151,16 @@
 }
 @media screen and (max-width: 768px) {
   .center-container {
-    height: 1430px;
+    height: 1600px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .center-container {
+    height: 1500px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .center-container {
+    height: 1300px;
   }
 }
