@@ -3,9 +3,9 @@ import './CustomerNavbarMobile.css';
 
 function CustomerNavbarMobile({ activeTab, setActiveTab }) {
     const menuItems = [
-        { id: 'inquiry', text: '고객문의', width: '53px' },
-        { id: 'faq', text: '자주하는 질문', width: '65px' },
-        { id: 'notice', text: '공지사항', width: '53px' },
+        { id: 'customer-service', text: '고객센터', width: '53px' },
+        { id: 'news', text: '새소식', width: '53px' },
+        { id: 'board', text: '사내 자유게시판', width: '80px' },
     ];
 
     return (

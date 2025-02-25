@@ -35,8 +35,11 @@ function CustomerSupportDesktop() {
                     <DesktopNavbar />
                     <div className="customer-content">
                         <div className="banner-title">
-                            <p className="light-text">신일푸드의</p>
-                            <p className="bold-text">고객서비스를 안내합니다</p>
+                            <p className="light-text">신뢰와 소통의 중심</p>
+                            <p>
+                                <span className="light-text">신일푸드 </span>
+                                <span className="bold-text">고객센터</span>
+                            </p>
                         </div>
                     </div>
                 </div>
