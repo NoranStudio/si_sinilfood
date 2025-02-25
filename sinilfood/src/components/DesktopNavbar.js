@@ -35,9 +35,12 @@ function DesktopNavbar() {
                         </a>
                     </li>
                     <li>
-                        <a href="#services" className={location.hash === '#services' ? 'active' : ''}>
+                        <Link
+                            to="/customer-service/support"
+                            className={location.pathname.includes('customer-service') ? 'active' : ''}
+                        >
                             고객서비스
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>

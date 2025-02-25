@@ -1,0 +1,28 @@
+.customer-content-section {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+    min-height: 5vh;
+    height: auto;
+    overflow: visible;
+}
+
+.customer-content-section h2 {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.customer-content-section p {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
