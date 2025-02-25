@@ -1,7 +1,7 @@
 .customer-content-section {
     width: 1440px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 115px 0;
     position: relative;
     min-height: 5vh;
     height: auto;
@@ -12,10 +12,15 @@
     font-family: 'Apple SD Gothic Neo';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 38px;
+    line-height: 1.43;
+    letter-spacing: -1.9px;
     color: #000000;
     margin-bottom: 30px;
+    text-align: center;
+    width: 400px;
+    height: 65px;
+    margin: 0 auto;
 }
 
 .customer-content-section p {
@@ -25,4 +30,812 @@
     font-size: 18px;
     line-height: 25px;
     color: #000000;
+}
+
+.service-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.service-menu-item {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: -1.2px;
+    color: #717070;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+.service-menu-item.active {
+    color: #000000;
+    font-weight: 700;
+}
+
+.service-menu-divider {
+    width: 1px;
+    height: 21px;
+    background-color: #717070;
+}
+
+/* 각 메뉴 아이템의 너비 설정 */
+.service-menu-item:nth-child(1) {
+    width: 105px;
+}
+
+.service-menu-item:nth-child(3) {
+    width: 189px;
+}
+
+.service-menu-item:nth-child(5) {
+    width: 170px;
+}
+
+.service-menu-item:nth-child(7) {
+    width: 41px;
+}
+
+.service-board-container {
+    margin-top: 60px;
+    width: 1280px;
+    margin: 60px auto 0;
+}
+
+.service-post-count {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #717070;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.service-count-number {
+    color: #499953;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+.service-board-header {
+    display: flex;
+    padding: 25px 0;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    background-color: rgba(94, 116, 58, 0.1);
+}
+
+.service-board-item {
+    display: flex;
+    padding: 25px 0;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28.8px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.service-no {
+    width: 100px;
+    text-align: center;
+    margin-left: 57px;
+}
+
+.service-title {
+    flex: 1;
+    text-align: center;
+}
+
+.service-date {
+    width: 150px;
+    text-align: center;
+    margin-right: 57px;
+}
+
+.service-pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.service-arrow-box {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #b8b8b8;
+}
+
+.service-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.service-arrow-left {
+    border-width: 6px 10px 6px 0;
+    border-color: transparent #499953 transparent transparent;
+}
+
+.service-arrow-right {
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #499953;
+}
+
+.service-page-button {
+    font-family: 'Pretendard Variable';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28.64px;
+    color: #717070;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.service-page-button.active {
+    color: #499953;
+}
+
+.service-write-button {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    background-color: #499953;
+    border: none;
+    border-radius: 50px;
+    width: 108px;
+    height: 40px;
+    color: white;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    cursor: pointer;
+}
+
+.service-page-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.service-write-form-container {
+    width: 1280px;
+    min-height: 1357px;
+    margin: 110px auto 0;
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: flex-start;
+    padding: 120px 0 60px;
+}
+
+.service-write-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 92px;
+}
+
+.service-form-row {
+    display: flex;
+    margin-bottom: 65px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.service-form-row label {
+    width: 108px;
+    margin-right: 45px;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #000000;
+}
+
+.service-input {
+    height: 62px;
+    width: 600px;
+    border: 1px solid #717070;
+    padding: 0 20px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    background-color: white;
+}
+
+.service-input::placeholder {
+    color: #e6e6e6;
+}
+
+.service-input-full {
+    width: 988px;
+}
+
+.service-email-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-email-input-group .service-input,
+.service-email-input-group .service-select {
+    width: 322px;
+}
+
+.service-email-input-group .service-input.domain-input {
+    width: 322px;
+}
+
+.service-email-input-group .service-select.domain-select {
+    width: 285px;
+}
+
+.service-email-input-group span {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #000000;
+}
+
+.service-email-input-group .service-input::placeholder {
+    color: #e6e6e6;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.service-phone-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-phone-input-group .service-input,
+.service-phone-input-group .service-select {
+    width: 216px;
+}
+
+.service-select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.service-select {
+    width: 322px;
+    height: 62px;
+    border: 1px solid #717070;
+    padding: 0 20px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    background-color: white;
+    appearance: none;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.service-phone-input-group .service-select {
+    width: 216px;
+}
+
+.service-select-arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 12px;
+    height: 22px;
+    transform: translateY(-50%);
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='22' viewBox='0 0 12 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8L6 13L11 8' stroke='%23717070' stroke-width='2'/%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
+.service-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #717070;
+    border-top: none;
+    z-index: 1;
+}
+
+.service-dropdown-item {
+    padding: 10px 20px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #717070;
+    cursor: pointer;
+}
+
+.service-dropdown-item:hover {
+    background-color: #f5f5f5;
+}
+
+.service-textarea {
+    width: 988px;
+    height: 500px;
+    border: 1px solid #717070;
+    padding: 20px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    resize: none;
+    margin-top: 20px;
+}
+
+.service-file-input-group {
+    display: flex;
+    gap: 18px;
+}
+
+.service-file-input-group .service-input {
+    width: 630px;
+    background-color: white;
+}
+
+.service-file-button {
+    width: 340px;
+    height: 62px;
+    background-color: #717070;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    border: 1px solid #717070;
+    cursor: pointer;
+}
+
+.service-submit-button,
+.service-cancel-button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    cursor: pointer;
+}
+
+.service-submit-button {
+    background-color: #499953;
+    color: white;
+}
+
+.service-cancel-button {
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #717070;
+    border-radius: 50px;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #717070;
+    cursor: pointer;
+}
+
+.customer-content-section.writing {
+    padding-bottom: 0;
+    height: auto;
+    min-height: 100vh;
+}
+
+.service-form-buttons {
+    width: 340px;
+    display: flex;
+    gap: 20px;
+    margin: 35px auto 0;
+}
+
+/* Board 스타일 */
+.board-container {
+    margin-top: 60px;
+    width: 1280px;
+    margin: 60px auto 0;
+}
+
+.board-post-count {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #717070;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.board-count-number {
+    color: #499953;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+.board-header {
+    display: flex;
+    padding: 25px 0;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    background-color: rgba(94, 116, 58, 0.1);
+}
+
+.board-item {
+    display: flex;
+    padding: 25px 0;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28.8px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.board-no {
+    width: 120px;
+    text-align: center;
+    margin-left: 57px;
+}
+
+.board-title {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+    min-width: 500px;
+}
+
+.board-date {
+    width: 180px;
+    text-align: center;
+}
+
+.board-author {
+    width: 180px;
+    text-align: center;
+}
+
+.board-views {
+    width: 180px;
+    text-align: center;
+    margin-right: 57px;
+}
+
+/* 게시글 제목만 hover 시 왼쪽 정렬 */
+.board-item .board-title:hover {
+    text-align: left;
+}
+
+.service-pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.service-arrow-box {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #b8b8b8;
+}
+
+.service-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.service-arrow-left {
+    border-width: 6px 10px 6px 0;
+    border-color: transparent #499953 transparent transparent;
+}
+
+.service-arrow-right {
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #499953;
+}
+
+.service-page-button {
+    font-family: 'Pretendard Variable';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28.64px;
+    color: #717070;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.service-page-button.active {
+    color: #499953;
+}
+
+.service-write-button {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    background-color: #499953;
+    border: none;
+    border-radius: 50px;
+    width: 108px;
+    height: 40px;
+    color: white;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    cursor: pointer;
+}
+
+.service-page-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.service-write-form-container {
+    width: 1280px;
+    min-height: 1357px;
+    margin: 110px auto 0;
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: flex-start;
+    padding: 120px 0 60px;
+}
+
+.service-write-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 92px;
+}
+
+.service-form-row {
+    display: flex;
+    margin-bottom: 65px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.service-form-row label {
+    width: 108px;
+    margin-right: 45px;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #000000;
+}
+
+.service-input {
+    height: 62px;
+    width: 600px;
+    border: 1px solid #717070;
+    padding: 0 20px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    background-color: white;
+}
+
+.service-input::placeholder {
+    color: #e6e6e6;
+}
+
+.service-input-full {
+    width: 988px;
+}
+
+.service-email-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-email-input-group .service-input,
+.service-email-input-group .service-select {
+    width: 322px;
+}
+
+.service-email-input-group .service-input.domain-input {
+    width: 322px;
+}
+
+.service-email-input-group .service-select.domain-select {
+    width: 285px;
+}
+
+.service-email-input-group span {
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #000000;
+}
+
+.service-email-input-group .service-input::placeholder {
+    color: #e6e6e6;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.service-phone-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-phone-input-group .service-input,
+.service-phone-input-group .service-select {
+    width: 216px;
+}
+
+.service-select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.service-select {
+    width: 322px;
+    height: 62px;
+    border: 1px solid #717070;
+    padding: 0 20px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    background-color: white;
+    appearance: none;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.service-phone-input-group .service-select {
+    width: 216px;
+}
+
+.service-select-arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 12px;
+    height: 22px;
+    transform: translateY(-50%);
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='22' viewBox='0 0 12 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8L6 13L11 8' stroke='%23717070' stroke-width='2'/%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
+.service-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #717070;
+    border-top: none;
+    z-index: 1;
+}
+
+.service-dropdown-item {
+    padding: 10px 20px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #717070;
+    cursor: pointer;
+}
+
+.service-dropdown-item:hover {
+    background-color: #f5f5f5;
+}
+
+.service-textarea {
+    width: 988px;
+    height: 500px;
+    border: 1px solid #717070;
+    padding: 20px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 24px;
+    line-height: 28.8px;
+    resize: none;
+    margin-top: 20px;
+}
+
+.service-file-input-group {
+    display: flex;
+    gap: 18px;
+}
+
+.service-file-input-group .service-input {
+    width: 630px;
+    background-color: white;
+}
+
+.service-file-button {
+    width: 340px;
+    height: 62px;
+    background-color: #717070;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 24px;
+    border: 1px solid #717070;
+    cursor: pointer;
+}
+
+.service-submit-button,
+.service-cancel-button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    cursor: pointer;
+}
+
+.service-submit-button {
+    background-color: #499953;
+    color: white;
+}
+
+.service-cancel-button {
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #717070;
+    border-radius: 50px;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #717070;
+    cursor: pointer;
+}
+
+.customer-content-section.writing {
+    padding-bottom: 0;
+    height: auto;
+    min-height: 100vh;
+}
+
+.service-form-buttons {
+    width: 340px;
+    display: flex;
+    gap: 20px;
+    margin: 35px auto 0;
 }
