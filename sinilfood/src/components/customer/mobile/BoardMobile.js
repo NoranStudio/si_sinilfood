@@ -24,12 +24,6 @@ function BoardMobile() {
     const currentPagePosts = posts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage);
     const totalPages = Math.ceil(posts.length / postsPerPage);
 
-    const maskName = (name) => {
-        if (!name) return '';
-        const firstName = name.charAt(0);
-        return firstName + '*'.repeat(2);
-    };
-
     return (
         <div className="customer-content-section-mobile">
             <h2 className="customer-title-mobile">사내 자유게시판</h2>
