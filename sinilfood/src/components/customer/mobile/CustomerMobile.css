@@ -12,5 +12,375 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+.service-menu-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 45px;
+}
+
+.service-menu-item-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.6px;
+    color: #717070;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+.service-menu-item-mobile.active {
+    color: #000000;
+    font-weight: 700;
+}
+
+.service-menu-divider-mobile {
+    width: 1px;
+    height: 13px;
+    background-color: #717070;
+}
+
+.service-board-container-mobile {
+    width: 301px;
+    margin: 0 auto;
+}
+
+.service-board-header-mobile {
+    display: flex;
+    padding: 12px 0;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: rgba(94, 116, 58, 0.1);
+}
+
+.service-board-item-mobile {
+    display: flex;
+    padding: 12px 0;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    border-bottom: 0.5px solid #d9d9d9;
+}
+
+.service-no-mobile {
+    width: 31px;
+    text-align: center;
+    margin-left: 9px;
+}
+
+.service-title-mobile {
+    flex: 1;
+    text-align: center;
+    margin-left: 31px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.service-date-mobile {
+    width: 61px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.service-post-count-mobile {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    line-height: 16px;
+    color: #717070;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.service-count-number-mobile {
+    color: #499953;
+    text-decoration: underline;
+    margin: 0 2px;
+}
+
+.service-pagination-wrapper-mobile {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-board-actions-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     margin-bottom: 20px;
+}
+
+.service-pagination-container-mobile {
+    display: flex;
+    align-items: center;
+    gap: 13.5px;
+}
+
+.service-arrow-box-mobile {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #b8b8b8;
+}
+
+.service-page-buttons-mobile {
+    display: flex;
+    gap: 12px;
+}
+
+.service-page-button-mobile {
+    font-family: 'Pretendard Variable';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14.32px;
+    color: #717070;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.service-page-button-mobile.active {
+    color: #499953;
+}
+
+.service-write-button-mobile {
+    width: 70px;
+    height: 24px;
+    background-color: #499953;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.4px;
+    cursor: pointer;
+}
+
+.service-board-item-mobile .service-title-mobile {
+    text-align: left;
+}
+
+.service-write-form-container-mobile {
+    width: 300px;
+    height: 462px;
+    margin: 29px auto 0;
+    background-color: rgba(252, 252, 252, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.service-write-form-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.service-form-row-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service-form-row-mobile label {
+    width: 41px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    font-weight: 500;
+    text-align: left;
+}
+
+.service-form-row-mobile label.file-label {
+    white-space: pre-line;
+    line-height: 14px;
+    height: 28px;
+}
+
+.service-input-container-mobile {
+    flex: 1;
+}
+
+.service-input-mobile {
+    width: 100%;
+    height: 27px;
+    border: 1px solid #717070;
+    padding: 0 10px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.service-email-input-group-mobile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.service-email-input-group-mobile .service-input-mobile {
+    width: 62px;
+}
+
+.service-email-input-group-mobile span {
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+}
+
+.service-phone-input-group-mobile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.service-phone-input-group-mobile .service-input-mobile,
+.service-phone-input-group-mobile .service-select-mobile {
+    width: 62px;
+}
+
+.service-textarea-mobile {
+    width: 217px;
+    height: 170px;
+    border: 1px solid #717070;
+    padding: 10px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    line-height: 12px;
+    resize: none;
+}
+
+.service-file-input-group-mobile {
+    display: flex;
+    gap: 8px;
+    width: 217px;
+}
+
+.service-file-input-group-mobile .service-input-mobile {
+    flex: 1;
+    width: auto;
+}
+
+.service-file-button-mobile {
+    width: 65px;
+    height: 27px;
+    background-color: #717070;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.service-form-buttons-container-mobile {
+    width: 300px;
+    margin: 30px auto 0;
+}
+
+.service-form-buttons-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service-submit-button-mobile,
+.service-cancel-button-mobile {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    line-height: 14.4px;
+    cursor: pointer;
+}
+
+.service-submit-button-mobile {
+    background-color: #499953;
+    color: white;
+    border: none;
+}
+
+.service-cancel-button-mobile {
+    background-color: transparent;
+    border: 1px solid #717070;
+    color: #717070;
+}
+
+.service-select-mobile {
+    width: 62px;
+    height: 27px;
+    border: 1px solid #717070;
+    padding: 0 10px;
+    font-family: 'Apple SD Gothic Neo';
+    font-size: 12px;
+    line-height: 12px;
+    background-color: white;
+    appearance: none;
+    cursor: pointer;
+}
+
+.service-select-arrow-mobile {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border: solid #717070;
+    border-width: 0 1px 1px 0;
+    transform: translateY(-75%) rotate(45deg);
+    pointer-events: none;
+}
+
+.service-select-wrapper-mobile {
+    position: relative;
+    display: inline-block;
+}
+
+.service-email-input-group-mobile .service-select-mobile,
+.service-phone-input-group-mobile .service-select-mobile,
+.service-email-input-group-mobile .service-input-mobile,
+.service-phone-input-group-mobile .service-input-mobile {
+    width: 62px;
+}
+
+.service-input-container-mobile .service-input-mobile {
+    width: 217px;
+}
+
+.service-form-row-mobile .service-input-mobile {
+    width: 217px;
+}
+
+.service-email-input-group-mobile .service-input-mobile,
+.service-phone-input-group-mobile .service-input-mobile,
+.service-email-input-group-mobile .service-select-mobile,
+.service-phone-input-group-mobile .service-select-mobile {
+    width: 62px;
 }
