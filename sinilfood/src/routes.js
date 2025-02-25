@@ -7,7 +7,7 @@ import Home from './pages/Home/Home';
 import FCProducts from './pages/Business/FCProducts';
 // import CI from "./pages/About/CI";
 // import AboutCompany from "./pages/About/AboutCompany";
-// import CustomerSupport from "./pages/CustomerService/CustomerSupport";
+import CustomerSupport from './pages/CustomerService/CustomerSupport';
 
 const AppRoutes = () => {
     return (
@@ -15,8 +15,8 @@ const AppRoutes = () => {
             <Route path="/" element={<Home />} />
             <Route path="/business/fc-products" element={<FCProducts />} />
             {/* <Route path="/about/ci" element={<CI />} />
-            <Route path="/about/company" element={<AboutCompany />} />
-            <Route path="/customer-service/support" element={<CustomerSupport />} /> */}
+            <Route path="/about/company" element={<AboutCompany />} /> */}
+            <Route path="/customer-service/support" element={<CustomerSupport />} />
         </Routes>
     );
 };
