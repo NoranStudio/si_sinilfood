@@ -18,7 +18,7 @@ const CS = () => {
         <div className="cs-image-mo">
           <img src={counsel_image} alt="상담 이미지" />
         </div>
-        <button className="cs-button">
+        <button className="cs-button hover">
           온라인 상담문의
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ const CS = () => {
           <b>055. 334. 7789</b>
         </p>
       </div>
-      <div className="cs-image">
+      <div className="cs-image hover">
         <img src={counsel_image} alt="상담 이미지" />
       </div>
     </div>

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import Partners from "./Partners"; // 파트너섹션
 
@@ -8,39 +9,46 @@ import truckImage3 from "../../assets/img/center/product.png";
 import truckImage4 from "../../assets/img/center/good_system.png";
 import logo from "../../assets/img/center/logo.png";
 
+import "swiper/css";
 import "../../assets/styles/global.css";
 import "../../assets/styles/center.css";
 
 function CenterContents() {
-  const [activeContent, setActiveContent] = useState(0); // 현재 활성화된 콘텐츠의 인덱스 관리
+  const [activeContent, setActiveContent] = useState(0);
+  const swiperRef = useRef(null);
 
   // 슬라이드 데이터
   const slides = [
     {
+      id: 1,
       title: "전국 일일배송",
       subtitle: "전국 어디서나 신속하고 일관된 품질",
       image: truckImage1,
     },
     {
+      id: 2,
       title: "물류 네트워크",
       subtitle: "전국 어디서나 신속하고 일관된 품질",
       image: truckImage2,
     },
     {
+      id: 3,
       title: "뛰어난 상품성",
       subtitle: "전국 어디서나 신속하고 일관된 품질",
       image: truckImage3,
     },
     {
+      id: 4,
       title: "편리한 보관 시스템",
       subtitle: "전국 어디서나 신속하고 일관된 품질",
       image: truckImage4,
     },
   ];
 
-  // 버튼 클릭 시 활성화된 콘텐츠 변경
+  // 버튼 클릭 시 해당 슬라이드로 이동
   const handleButtonClick = (index) => {
     setActiveContent(index);
+    swiperRef.current?.slideTo(index);
   };
 
   return (
@@ -72,11 +80,18 @@ function CenterContents() {
           <img src={logo} alt="logo" />
         </div>
         <div className="truck-image-container">
-          <img
-            src={slides[activeContent].image}
-            alt="트럭 이미지"
-            className="truck-image"
-          />
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            onSlideChange={(swiper) => setActiveContent(swiper.activeIndex)}
+          >
+            {slides.map((slide) => (
+              <SwiperSlide key={slide.title}>
+                <img src={slide.image} alt={slide.title} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
       <Partners />

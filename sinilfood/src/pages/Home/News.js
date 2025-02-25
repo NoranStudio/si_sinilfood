@@ -46,14 +46,14 @@ const News = () => {
         {!isMobile && (
           <Swiper
             breakpoints={{
-              768: { spaceBetween: 34, slidesPerView: 3 },
+              768: { spaceBetween: 34, slidesPerView: 3.05 },
               480: { spaceBetween: 20, slidesPerView: 3 },
               0: { spaceBetween: 20, slidesPerView: 3 },
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회프랜차이즈산업협회프랜차이즈산업협회프랜차이즈산업협회
@@ -65,8 +65,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -78,8 +78,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -91,8 +91,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -104,8 +104,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -117,8 +117,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -130,8 +130,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -143,8 +143,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -166,8 +166,8 @@ const News = () => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             className="news-slider-mo"
           >
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -179,8 +179,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -192,8 +192,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...
@@ -205,8 +205,8 @@ const News = () => {
                 <span className="new-news-date">2024. 10. 21</span>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="new-news-item">
+            <SwiperSlide className="hover">
+              <div className="new-news-item hover">
                 <p className="new-news-notice">NOTICE</p>
                 <p className="new-news-title">
                   프랜차이즈산업협회, 2024 제2회 상생파...

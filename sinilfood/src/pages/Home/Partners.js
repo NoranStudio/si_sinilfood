@@ -28,37 +28,37 @@ const Partners = () => {
         </h2>
         <h3>협력사 및 제조사</h3>
         <div className="new-partners-grid">
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={cjFreshwayLogo} alt="CJ 프레시웨이" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={cjJeilJedangLogo} alt="CJ 제일제당" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={sajoLogo} alt="사조산업" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={baeksulLogo} alt="백설" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={ottogiLogo} alt="오뚜기" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={daekyungLogo} alt="대경O&T" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={daesangLogo} alt="대상" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={lotteLogo} alt="롯데" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={youngmiLogo} alt="영미산업" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={hiveLogo} alt="HIVE" />
           </div>
-          <div className="partner-item">
+          <div className="partner-item hover">
             <img src={bnbKoreaLogo} alt="BNB Korea" />
           </div>
         </div>

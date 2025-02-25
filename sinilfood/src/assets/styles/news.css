@@ -31,12 +31,14 @@ p {
 }
 .new-news-section .swiper-wrapper {
   padding: 10px;
+  box-sizing: border-box;
 }
 .new-news-item {
   background-color: #fff;
   border-radius: 15px;
   padding: 40px;
   text-align: left;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 .new-news-notice {
   color: rgba(73, 153, 83, 1);
