@@ -1,0 +1,33 @@
+.about-header {
+  background-image: url("../../img/about/about-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1920 / 500;
+  display: flex;
+}
+
+.about-header__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  aspect-ratio: 1280 / 500;
+}
+
+.about-header__title {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  color: #fff;
+}
+
+.about-header__title span:first-child {
+  font-weight: 300;
+}
+
+.about-header__title span:last-child {
+  font-weight: 500;
+}
