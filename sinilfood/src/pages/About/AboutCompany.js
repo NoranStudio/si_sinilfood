@@ -11,12 +11,12 @@ import "../../assets/styles/about/about-company.css";
 
 const AboutCompany = () => {
   return (
-    <div classname="about__company">
-      <div classname="about__company__contents">
+    <div class="about__company">
+      <div class="about__company__contents">
         <h1>(주)신일푸드 소개</h1>
         <img src={companyBuildingImg} alt="company-building" />
-        <div>
-          <div className="about__company__detail">
+        <div class="about__company__detail">
+          <div class="about__company__detail__text">
             <p>
               주식회사 신일푸드는 국내 유지업계를 선도하는 독자적인 전용 물류
               시스템을 바탕으로, 국내 외식산업 전반에 긍정적인 영향을 미치는
@@ -38,7 +38,7 @@ const AboutCompany = () => {
               있는 기업으로 성장할 것입니다.
             </p>
           </div>
-          <div classname="about__company__sign">
+          <div class="about__company__sign">
             <p>(주)신일푸드 대표이사</p>
             <p>박 영 미</p>
             <img src={signImg} alt="sign" />
@@ -46,42 +46,44 @@ const AboutCompany = () => {
         </div>
       </div>
       <img
-        classname="about__company__banner"
+        class="about__company__banner"
         src={meetingImg}
         alt="company-banner"
       />
-      <div classname="about__company__contents">
+      <div class="about__company__contents">
         <h1>경영이념</h1>
-        <p className="about__company__mission">Yes!</p>
-        <p className="about__company__mission">
-          긍정의 힘으로 <span>정직, 도전, 창의, 나눔</span>
-        </p>
+        <div class="about__company__mission">
+          <p>Yes!</p>
+          <p>
+            긍정의 힘으로 <span>정직, 도전, 창의, 나눔</span>
+          </p>
+        </div>
         <img src={missionImg} alt="mission" />
       </div>
-      <div classname="about__company__contents">
+      <div class="about__company__contents">
         <h1>ESG 경영</h1>
-        <div classname="about__company__esg-title">
+        <div class="about__company__esg-title">
           <p>지속가능경영</p>
           <p>ESG 핵심철학</p>
         </div>
-        <div className="about__company__cards">
-          <div className="about__company__card">
+        <div class="about__company__cards">
+          <div class="about__company__card">
             <GreenIcon />
-            <p>녹색 경영</p>
+            <h6 className="about__company__card__title">녹색 경영</h6>
             <p>에너지 효율화</p>
             <p>유해물질 배출 제로화</p>
             <p>탄소배출 줄이기</p>
           </div>
-          <div className="about__company__card">
+          <div class="about__company__card">
             <SocialIcon />
-            <p>사회적 책임</p>
+            <h6 className="about__company__card__title">사회적 책임</h6>
             <p>고용확대 및 고용평등</p>
             <p>지역 균형발전</p>
             <p>제품 안전</p>
           </div>
-          <div className="about__company__card">
+          <div class="about__company__card">
             <GroupIcon />
-            <p>지배구조 개선</p>
+            <h6 className="about__company__card__title">지배구조 개선</h6>
             <p>윤리(투명)경영</p>
             <p>소액주주 보호</p>
             <p>부정부패 척결</p>
