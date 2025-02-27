@@ -44,7 +44,7 @@ const AboutNavbar = () => {
         className="about-nav__highlight"
         style={{
           left: highlight.right,
-          width: "100%",
+          width: "calc(100% - " + highlight.right + "px)",
         }}
       />
       <ul>
